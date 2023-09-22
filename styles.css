@@ -1,0 +1,328 @@
+/* General Typography Styles */
+
+* {
+    font-family: 'Comfortaa', sans-serif !important;
+}
+
+
+body {
+    margin: 20px;  /* Add 20px margin to all sides */
+    padding: 20px;  /* Add 20px padding to all sides */
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.0em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: black
+}
+
+h2 {
+    font-size: 2.0em;
+    font-weight: 700;
+    color: #D03F2C !important;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    font-size: 1.25em;
+    font-style: italic;
+    margin-left: 1.5em;
+    padding-left: 1em;
+    border-left: 3px solid #ccc;
+}
+
+.btn.btn-primary {
+    background: linear-gradient(to bottom, #FFC100, #FFA500);
+    border-color: #FFC100;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second to open and close the sidenav */
+    padding-top: 60px;
+}
+
+.sidenav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 0px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+/* Padding for each section */
+.section {
+    padding: 20px;
+}
+
+/* Margin between sections */
+.section + .section {
+    margin-top: 40px;
+}
+
+
+/* Header styles */
+header {
+    /* background: linear-gradient(to bottom, #FFC100, #FFA500); */
+    /* border-radius: 20px; */
+    border-bottom: #111 1px solid;
+    
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Existing styles */
+
+/* Social-proof styling */
+#social-proof .image-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#social-proof .image-container {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box; /* Include padding and borders in total width */
+}
+
+#social-proof .image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#social-proof .image-container h3,
+#social-proof .image-container p {
+    margin: 5px 0;
+}
+
+/* Service styling */
+#service {
+    background: linear-gradient(to bottom, #FFC100, #FFA500);
+    border-radius: 20px;
+    margin: 20px!important;
+}
+
+/* Highlights Section */
+
+#highlights {
+    background: linear-gradient(to bottom, #FFC100, #FFA500);
+    border-radius: 20px;
+}
+
+#highlights .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#highlights .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+#highlights .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-gap: 20px; /* Gap between cards */
+}
+
+#highlights .card {
+    /* Your card styles, if any */
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+/* This targets the card container only within the features section */
+#features .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* This styles each card within the features section */
+#features .feature-card {
+    flex-basis: calc(33.33% - 20px);  /* for 3 cards in a row */
+    display: flex;  /* set up flex layout */
+    align-items: center;  /* center items vertically */
+    justify-content: flex-start;  /* align items to the start of the main axis */
+    margin: 10px;  /* space around each card */
+}
+
+#features .feature-card img {
+    max-width: 50%;  /* set max width for image */
+    height: auto;
+}
+
+#features .feature-card p {
+    flex: 1;  /* flex grow to fill remaining space */
+    padding-left: 20px;  /* padding to the left of the text */
+}
+
+/* Last CTA styling */
+#last-cta {
+    background: linear-gradient(to bottom, #FFC100, #FFA500);
+    border-radius: 20px;
+}
+
+
+/* General Section Card Styling */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-basis: calc(33.33% - 20px); /* distribute space equally, account for margins */
+    margin: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card h3,
+.card p {
+    margin: 10px 0;
+}
+
+/* Padding for each section */
+.section {
+    padding: 20px;
+}
+
+/* Margin between sections */
+.section + .section {
+    margin-top: 40px;
+}
+
+/* Header and Footer styles remain the same */
+/* ... */
+
+
+
+
+
+/* Footer styles */
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-top: #111 1px solid;
+
+}
+
+.footer-column {
+    flex: 1;
+    flex-basis: 0;  /* Optional, helps distribute space evenly */
+    box-sizing: border-box;  /* To include any padding or border */
+}
+
+.image-container {
+    width: 100px;
+    height: 100px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-link {
+    color: blue;
+    text-decoration: underline;
+}
