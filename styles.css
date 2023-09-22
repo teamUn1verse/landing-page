@@ -4,16 +4,15 @@
     font-family: 'Comfortaa', sans-serif !important;
 }
 
-
 body {
-    margin: 20px;  /* Add 20px margin to all sides */
+    margin: 0 100px!important;
     padding: 20px;  /* Add 20px padding to all sides */
 }
 
 
 
 h1, h2, h3, h4, h5, h6 {
-    margin-top: 1.0em;
+    margin-top: 20.0em;
     margin-bottom: 0.5em;
 }
 
@@ -84,6 +83,18 @@ blockquote {
     align-items: center;
 }
 
+/* Make sure this CSS is loaded after Bootstrap */
+/* Increasing specificity by targeting the ID */
+#menuBtn.menu-button {
+    background-color: #4CAF50 !important; /* Different background color */
+    border: 2px solid #333 !important; /* Border for differentiation */
+    color: white !important; /* Text color */
+    /* Add more styles as needed */
+}
+
+
+
+
 
 
 /* The side navigation menu */
@@ -134,6 +145,13 @@ blockquote {
 
 
 
+.img-fluid.icon {
+    max-width: 50px; /* Set the max width you want */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+
+
 /* Padding for each section */
 .section {
     padding: 20px;
@@ -161,35 +179,13 @@ header img {
 /* Existing styles */
 
 /* Social-proof styling */
-#social-proof .image-row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
-#social-proof .image-container {
-    flex: 1;
-    text-align: center;
-    margin: 10px;
-    box-sizing: border-box; /* Include padding and borders in total width */
-}
-
-#social-proof .image-container img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-#social-proof .image-container h3,
-#social-proof .image-container p {
-    margin: 5px 0;
-}
 
 /* Service styling */
 #service {
     background: linear-gradient(to bottom, #FFC100, #FFA500);
     border-radius: 20px;
-    margin: 20px!important;
+    /* margin: 40px!important; */
 }
 
 /* Highlights Section */
@@ -223,13 +219,8 @@ header img {
 }
 
 /* This targets the card container only within the features section */
-#features .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
-/* This styles each card within the features section */
+
 #features .feature-card {
     flex-basis: calc(33.33% - 20px);  /* for 3 cards in a row */
     display: flex;  /* set up flex layout */
@@ -238,14 +229,19 @@ header img {
     margin: 10px;  /* space around each card */
 }
 
-#features .feature-card img {
-    max-width: 50%;  /* set max width for image */
-    height: auto;
+.image-text-container {
+    display: flex; /* make this a flex container too */
+    align-items: center; /* align items in the center */
+    justify-content: flex-start; /* center items horizontally */
+    min-width: 150px;  /* Adjust this value as needed */
+
 }
 
-#features .feature-card p {
-    flex: 1;  /* flex grow to fill remaining space */
-    padding-left: 20px;  /* padding to the left of the text */
+.image-text-container img {
+    flex: 0 0 auto; /* Do not grow, do not shrink, auto size */
+    width: 70px; 
+    height: auto; 
+    margin-right: 20px; 
 }
 
 /* Last CTA styling */
@@ -265,14 +261,39 @@ header img {
 .card {
     flex-basis: calc(33.33% - 20px); /* distribute space equally, account for margins */
     margin: 10px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     box-sizing: border-box;
+    display: flex; /* make this a flex container */
+    flex-direction: column; /* stack the flex items vertically */
+}
+
+.card .image-text-container {
+    display: flex; /* make this a flex container too */
+    flex-direction: row;
+    /* align-items: center; align items in the center */
+    /* justify-content: center; center items horizontally */
+}
+
+
+.image-text-container img {
+    max-width: 70px;
+    max-height: 70px;
+    margin: 20px;
 }
 
 .card img {
+    margin-top: 10px;
+    margin-bottom: 10px;
     max-width: 100%;
     height: auto;
 }
+
+.card p {
+    margin: 0; /* remove the default margin */
+}
+
 
 .card h3,
 .card p {
@@ -289,8 +310,28 @@ header img {
     margin-top: 40px;
 }
 
-/* Header and Footer styles remain the same */
-/* ... */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Or whatever you need */
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(to bottom, #FFC100, #FFA500);
+    border-radius: 20px;
+
+
+}
+
+.feature-image {
+    max-width: 50px; /* or whatever max-width you prefer */
+    height: auto;
+    margin-right: 15px;
+    
+}
+
 
 
 
@@ -308,8 +349,30 @@ header img {
 
 .footer-column {
     flex: 1;
-    flex-basis: 0;  /* Optional, helps distribute space evenly */
+    /* flex-basis: 0;  Optional, helps distribute space evenly */
+    padding: 20px;  /* You can set padding if you want */
     box-sizing: border-box;  /* To include any padding or border */
+    margin-left: 50px;
+}
+
+.footer-row {
+    display: flex;
+    align-items: center;  /* Align vertically centered */
+    flex-wrap: nowrap;  /* Prevent wrapping */
+    justify-content: flex-start;  /* Align items to the start */
+}
+
+.footer-row h1 {
+    flex: 1;
+    margin: 0;
+    white-space: nowrap;  /* Prevent text from wrapping */
+    /* overflow: hidden; */
+    text-overflow: ellipsis;  /* Cut off and show '...' when too long */
+    max-width: calc(100% - 120px);  /* Reserve some space for the image */
+}
+
+.footer-row p {
+    margin-right: 30px;
 }
 
 .image-container {
