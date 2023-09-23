@@ -176,9 +176,36 @@ header img {
     height: auto;
 }
 
-/* Existing styles */
 
 /* Social-proof styling */
+#social-proof .card{
+    border-radius: 20px;
+    border-color: transparent; 
+    background: linear-gradient(to bottom, #FFC100, #FFA500);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Adjust as needed */
+}
+
+#social-proof .card h3{
+    font-size: 20px;
+    /* margin: 40px!important; */
+}
+
+
+#brochure .card{
+    border-radius: 20px;
+    border-color: transparent;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Adjust as needed */
+
+}
+
+#brochure .card h5{
+    margin-top: 20px;
+}
+
+#brochure .card p{
+    margin-bottom: 20px;
+}
+
 
 
 /* Service styling */
@@ -188,6 +215,10 @@ header img {
     /* margin: 40px!important; */
 }
 
+#service .card{
+    border-radius: 20px;
+    /* margin: 40px!important; */
+}
 /* Highlights Section */
 
 #highlights {
@@ -216,6 +247,18 @@ header img {
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
+    border-radius: 20px;
+}
+
+#highlights .card h5{
+    color: #D03F2C;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+
+#highlights .card p{
+    color: black;
+    font-size: 14px;
 }
 
 /* This targets the card container only within the features section */
@@ -227,13 +270,16 @@ header img {
     align-items: center;  /* center items vertically */
     justify-content: flex-start;  /* align items to the start of the main axis */
     margin: 10px;  /* space around each card */
+    border-radius: 20px;
 }
 
 .image-text-container {
     display: flex; /* make this a flex container too */
     align-items: center; /* align items in the center */
     justify-content: flex-start; /* center items horizontally */
-    min-width: 150px;  /* Adjust this value as needed */
+    width: auto;  /* Adjust this value as needed */
+    text-align: left;
+    font-size: 14px;
 
 }
 
@@ -244,18 +290,75 @@ header img {
     margin-right: 20px; 
 }
 
+.carousel-img {
+    width: 80px;
+    height: 80px;
+}
+
+.carousel-inner {
+    position: relative;  /* Ensure this is set */
+    
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50%;            /* Center vertically */
+    left: 50%;           /* Center horizontally */
+    
+    transform: translate(-50%, -50%); /* Required for exact centering */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;          /* You can adjust the width as needed */
+    height: auto;        /* Auto height to fit content */
+}
+
+  
+
+
 /* Last CTA styling */
 #last-cta {
     background: linear-gradient(to bottom, #FFC100, #FFA500);
     border-radius: 20px;
 }
 
+#last-cta h1, 
+#last-cta h2, 
+#last-cta .input-group {
+    margin-top: 20px;
+    margin-bottom: 20px; /* You can adjust this value as needed */
+}
+
+.input-group .input-group-prepend .input-group-text {
+    margin-right: 0px;  /* Adjust value as needed */
+    border-radius: 0px;
+    height: 60px;
+
+}
+
+.input-group .form-control {
+    margin-right: 0px;  /* Adjust value as needed */
+    height: 60px;
+    
+}
+
+.input-group .btn {
+    margin-left: 10px;  /* Adjust value as needed */
+    background-color: #D03F2C;
+    color: white;
+}
+
+
 
 /* General Section Card Styling */
 .card-container {
     display: flex;
+    flex-wrap: nowrap;  /* Prevents wrapping to the next line */
     justify-content: space-around;
-    flex-wrap: wrap;
+    overflow: auto;  /* Optional: Enable scroll if content overflows */
+
+    
 }
 
 .card {
@@ -298,6 +401,17 @@ header img {
 .card h3,
 .card p {
     margin: 10px 0;
+}
+
+.flag {
+    vertical-align: middle;
+    width: 32px;  /* Adjust as needed */
+    margin-left: 5px;
+}
+
+.with-flag {
+    display: inline-flex;
+    align-items: center;
 }
 
 /* Padding for each section */
