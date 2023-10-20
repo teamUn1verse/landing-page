@@ -1,0 +1,29 @@
+.btn {
+  box-sizing: border-box;
+  align-items: center;
+  background-color: #F8645E;
+  border-radius: 50px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 25px;
+  position: relative;
+  border: 1px solid #F8645E;
+  color: #ffffff;
+  cursor: pointer;
+  .btn__text {
+    color: inherit;
+    font-family: "Gilroy-Semibold", Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    position: relative;
+    white-space: nowrap;
+  }
+  &:hover{
+    color: #F8645E;
+    background-color: #fff;
+  }
+}

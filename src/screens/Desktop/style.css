@@ -403,7 +403,7 @@
   position: relative;
 }
 
-.desktop .text-wrapper-4 {
+.desktop .menu-item {
   color: #000000;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 16px;
@@ -416,17 +416,8 @@
   width: fit-content;
 }
 
-.desktop .text-wrapper-5 {
+.desktop .menu-item:hover {
   color: #f8645e;
-  font-family: "Gilroy-Semibold", Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 25.6px;
-  margin-top: -1px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
 }
 
 .desktop .footer-line {
@@ -609,9 +600,6 @@
 }
 
 .desktop .submit-button {
-  all: unset;
-  box-sizing: border-box;
-  height: 70px;
   left: 301px;
   position: absolute;
   top: 546px;
@@ -781,23 +769,9 @@
   width: 640px;
 }
 
-.desktop .your-email {
-  background-color: transparent;
-  border: 0;
-  color: #acacac;
-  font-family: "Gilroy-Medium", Helvetica;
-  font-size: 18px;
-  font-weight: 500;
-  height: 30px;
-  left: 38px;
-  letter-spacing: 0;
-  line-height: 29.9px;
-  padding: 0;
-  position: relative;
-  text-align: center;
+.desktop .input-email {
   top: 32px;
-  white-space: nowrap;
-  width: 85px;
+
 }
 
 .desktop .overlap-wrapper {
@@ -1489,10 +1463,7 @@
   width: 83px;
 }
 
-.desktop .button {
-  all: unset;
-  box-sizing: border-box;
-  height: 68px;
+.desktop .button-get-started {
   left: 0;
   position: absolute;
   top: 287px;
@@ -1818,10 +1789,7 @@
   width: 126px;
 }
 
-.desktop .button-2 {
-  all: unset;
-  box-sizing: border-box;
-  height: 69px;
+.desktop .button-categories{
   left: 0;
   position: absolute;
   top: 327px;
@@ -2073,9 +2041,6 @@
 }
 
 .desktop .button-3 {
-  all: unset;
-  box-sizing: border-box;
-  height: 69px;
   left: 37px;
   position: absolute;
   top: 357px;
