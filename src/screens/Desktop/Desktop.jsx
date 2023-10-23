@@ -1,12 +1,46 @@
 import React from "react";
 import "./style.css";
+import { useState } from 'react';
 import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
+import Testimonial from '../../components/Testimonial/Testimonial';
+import Modal from '../../components/Modal/Modal';
+import CTA from '../../components/CTA/CTA';
+
 
 export const Desktop = () => {
   const handleSubmit = () => {
     alert("rock-n-roll here Janne");
   };
+
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const testimonials = [
+    {
+      name: "Irene Buller",
+      position: "Senior Consultant, EY, Switzerland",
+      text: "...",
+      photo: "/img/testimonial-photo.png"
+    },
+    {
+      name: "Ja R",
+      position: "Senior Consultant, EY, Switzerland",
+      text: "...",
+      photo: "/img/testimonial-photo.png"
+    },
+    // ... add more testimonials
+  ];
+
+  const handleNext = () => {
+    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
+  const [activeModal, setActiveModal] = useState(null);
+
+
   return (
     <div className="desktop">
       <div className="div">
@@ -110,15 +144,27 @@ export const Desktop = () => {
           >
             Privacy Policy
           </a>
-          <div className="footer-menu">
+          <div className="footer-menu" id="contact">
             <div className="frame-2">
-              <a className="menu-item">About Us</a>
-              <a className="menu-item">Reviews</a>
-              <a className="menu-item">Podcast</a>
-              <a className="menu-item">Categories</a>
-              <a className="menu-item">Contact</a>
+              {/* <a className="menu-item">About Us</a> */}
+              {/* <a href="#reviews" className="menu-item">Reviews</a> */}
+              {/* <a href="#podcast" className="menu-item">Podcast</a> */}
+              {/* <a href="#categories" className="menu-item">Categories</a> */}
+              <div className="contact-section">
+                <a className="menu-item">Contact</a>
+                <a href="mailto:example@email.com" className="email-link">example@email.com</a>
+                <div className="social-media-links">
+                  <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  {/* ... other social media links ... */}
+              </div>
             </div>
-          </div>
+        </div>
+
+
+
+    </div>
           <img
             className="footer-line"
             alt="Footer line"
@@ -191,9 +237,13 @@ export const Desktop = () => {
             </div>
           </div>
         </div>
-        <div className="subscribe-section">
+
+        <div className="subscribe-section" id="subscribe">
           <div className="overlap-4">
+
             <div className="form">
+            <CTA />
+{/* 
               <div className="overlap-5">
                 <p className="form-title">
                   Subscribe today and get your &#34;Empathy in business
@@ -234,7 +284,7 @@ export const Desktop = () => {
                 <Button className="submit-button" onClick={handleSubmit}>
                   Subscribe
                 </Button>
-              </div>
+              </div> */}
             </div>
             <div className="overlap-wrapper">
               <div className="overlap-6">
@@ -246,97 +296,80 @@ export const Desktop = () => {
             <img className="woman" alt="Woman" src="/img/woman.png" />
           </div>
         </div>
-        <div className="reviews-section">
+        <div className="reviews-section" id="reviews">
+          <Testimonial />
+
           <div className="overlap-group-wrapper">
             <div className="overlap-group-3">
               <div className="borders-3" />
               <div className="tagline-3">Reviews</div>
             </div>
           </div>
-          <div className="overlap-7">
-            <div className="rectangle" />
-            <div className="arrow-right">
-              <div className="overlap-8">
-                <img
-                  className="vector-13"
-                  alt="Vector"
-                  src="/img/vector-20-1.png"
-                />
-              </div>
-            </div>
-            <div className="arrow-left">
-              <div className="overlap-8">
-                <img
-                  className="vector-14"
-                  alt="Vector"
-                  src="/img/vector-20.png"
-                />
-              </div>
-            </div>
-            <div className="testimonial-contetnt">
-              <img
-                className="testimonial-photo"
-                alt="Testimonial photo"
-                src="/img/testimonial-photo.png"
-              />
-              <div className="testimonial-details">
-                <div className="testimonial-name">
-                  <div className="text-wrapper-9">Irene Buller</div>
-                </div>
-                <div className="testimonial-position">
-                  <div className="text-wrapper-10">
-                    Senior Consultant, EY, Switzerland
-                  </div>
-                </div>
-                <div className="testimonial-text">
-                  <p className="text-wrapper-11">
-                    I’ve seen so many interviews with entrepreneurs, including
-                    on educational platforms, but this is the first time I’ve
-                    seen this exact effectuation approach. I work in a research
-                    environment and I see that the use of research findings in
-                    interviews adds a special character and makes them truly
-                    engaging and really useful.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <img className="quote" alt="Quote" src="/img/quote-1.png" />
-            <img className="quote-2" alt="Quote" src="/img/quote.png" />
-          </div>
-          <div className="dots">
-            <div className="ellipse-9" />
-            <div className="ellipse-10" />
-            <div className="ellipse-11" />
-            <div className="ellipse-12" />
-            <div className="ellipse-13" />
-          </div>
+
           <div className="h-tagline-wrapper">
             <div className="tagline-4">Subscribers about U-interviews</div>
           </div>
         </div>
-        <div className="categories-section">
+        <div className="categories-section" id="categories">
           <div className="categories-list">
             <div className="cat-item">
               <div className="frame-wrapper">
-                <div className="as-wrapper">
+              <div className="as-wrapper" onClick={() => setActiveModal('effectuators')}>
                   <div className="as">Entrepreneurs Effectuators</div>
                 </div>
+
+                <Modal 
+                    isVisible={activeModal === 'effectuators'} 
+                    onClose={() => setActiveModal(null)}
+                >
+                    <h3>Entrepreneurs Effectuators</h3>
+                    <p>Delve into the world of Entrepreneurs Effectuators, where ideas evolve into tangible businesses. These are the pioneers who leverage uncertainty and turn constraints into innovative solutions. Their hands-on approach, adaptive thinking, and keen insight into market demands make them stand out. Discover their stories, strategies, and the unique effectuation principles that guide their entrepreneurial journey.</p>                
+                
+                </Modal>
+
               </div>
             </div>
             <div className="cat-item-2">
-              <div className="as-wrapper">
+            <div className="as-wrapper" onClick={() => setActiveModal('serial')}>
                 <div className="as-2">Serial Entrepreneurs</div>
               </div>
+              <Modal 
+                  isVisible={activeModal === 'serial'} 
+                  onClose={() => setActiveModal(null)}
+              >
+                  <h3>Serial Entrepreneurs</h3>
+                  <p>Meet the relentless visionaries who've mastered the art of starting multiple successful ventures. Serial Entrepreneurs are not just about multiple businesses; they're about resilience, adaptability, and a relentless pursuit of innovation. Every failure is a stepping stone, every success a testament to their indomitable spirit. Dive into their multifaceted journeys and glean insights into building, scaling, and transitioning across various industries.</p>
+
+              </Modal>
+
             </div>
             <div className="cat-item-3">
-              <div className="as-wrapper">
+            <div className="as-wrapper" onClick={() => setActiveModal('researchers')}>
                 <div className="as-3">Entrepreneurship Researchers</div>
               </div>
+              <Modal 
+                  isVisible={activeModal === 'researchers'} 
+                  onClose={() => setActiveModal(null)}
+              >
+                  <h3>Entrepreneurship Researchers</h3>
+                  <p>Behind every thriving entrepreneurial ecosystem lies the meticulous work of Entrepreneurship Researchers. These are the individuals who dissect, analyze, and present the intricacies of entrepreneurial phenomena. Their rigorous studies provide budding entrepreneurs with frameworks, theories, and data-driven insights. Explore the latest findings, trends, and academic perspectives that are shaping the future of entrepreneurship.</p>
+                  
+              </Modal>
+
             </div>
             <div className="cat-item-4">
-              <div className="as-wrapper">
+            <div className="as-wrapper" onClick={() => setActiveModal('designers')}>
                 <div className="as-4">Ecosystem Designers</div>
               </div>
+              <Modal 
+                  isVisible={activeModal === 'designers'} 
+                  onClose={() => setActiveModal(null)}
+              >
+                  <h3>Ecosystem Designers</h3>
+                  <p>Crafting a conducive environment for startups and innovators is no small feat. Ecosystem Designers are the architects behind thriving entrepreneurial landscapes. They cultivate networks, foster collaborations, and design platforms that facilitate growth, innovation, and sustainability. Discover the strategies employed by these visionaries to create ecosystems where ideas flourish and businesses thrive.</p>
+                  
+              </Modal>
+
             </div>
           </div>
           <img
@@ -398,7 +431,15 @@ export const Desktop = () => {
               </div>
             </div>
           </div>
-          <Button className="button-get-started">Get Started</Button>
+          <Button 
+              className="button-get-started" 
+              onClick={() => {
+                  document.getElementById('subscribe').scrollIntoView({ behavior: 'smooth' });
+              }}
+          >
+              Get Started
+          </Button>
+          
           <div className="h-3">
             <div className="tagline-7">U-values</div>
           </div>
@@ -409,7 +450,7 @@ export const Desktop = () => {
             </div>
           </div>
         </div>
-        <div className="podcast">
+        <div className="podcast" id="podcast">
           <div className="overlap-9">
             <div className="podcast-list">
               <div className="podcast-item">
@@ -505,9 +546,17 @@ export const Desktop = () => {
               </div>
             </div>
           </div>
-          <Button className="button-categories">View All Categories</Button>
+          <Button 
+              className="button-categories" 
+              onClick={() => {
+                  document.getElementById('categories').scrollIntoView({ behavior: 'smooth' });
+              }}
+          >
+              View All Categories
+          </Button>
         </div>
         <div className="starting-section">
+
           <div className="overlap-14">
             <div className="overlap-15">
               <div className="borders-5" />
@@ -519,25 +568,24 @@ export const Desktop = () => {
               business you enjoy
             </p>
             <div className="h-9">of the world</div>
-            <Button className="button-3">Get Started</Button>
+            {/* <Button className="button-3">Get Started</Button> */}
+            <Button 
+                className="button-3" 
+                onClick={() => {
+                    document.getElementById('subscribe').scrollIntoView({ behavior: 'smooth' });
+                }}
+            >
+                Get Started
+            </Button>
+
           </div>
         </div>
         <div className="navbar">
-          <a href="#" className="menu-item">
-            About Us
-          </a>
-          <a href="#" className="menu-item">
-            Reviews
-          </a>
-          <a href="#" className="menu-item">
-            Podcast
-          </a>
-          <a href="#" className="menu-item">
-            Categories
-          </a>
-          <a href="#" className="menu-item">
-            Contact
-          </a>
+          {/* <a href="#about-us" className="menu-item">About Us</a> */}
+          <a href="#reviews" className="menu-item">Reviews</a>
+          <a href="#podcast" className="menu-item">Podcast</a>
+          <a href="#categories" className="menu-item">Categories</a>
+          <a href="#contact" className="menu-item">Contact</a>
         </div>
         <div className="image-wrapper">
           <div className="div-wrapper">

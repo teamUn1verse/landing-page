@@ -1,0 +1,50 @@
+.testimonial-contetnt {
+    transition: opacity 1.5s ease-in-out;
+    opacity: 1;  // By default, it should be visible
+
+
+    &.fade-in {
+        opacity: 1;  // Fade in
+        
+
+    }
+
+    &.fade-out {
+        opacity: 0;  // Fade out
+
+    }
+}
+
+.overlap-7, .overlap-7 * {
+    user-select: none;
+    }
+
+
+.arrow-left {
+    user-select: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
+    :hover{
+        background-color: red;
+    }
+    :active{
+        // transform: scale(1.1);  /* scales the element up to 110% of its original size when clicked */
+        background-color: blue;
+
+    }
+}
+
+.arrow-right {
+    user-select: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
+    :hover{
+        background-color: red;
+    }
+    :active{
+        // transform: scale(1.1);  /* scales the element up to 110% of its original size when clicked */
+        background-color: blue;
+
+    }
+}
+
+
+

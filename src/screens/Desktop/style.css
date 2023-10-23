@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .desktop {
   background-color: #ffffff;
   display: flex;
@@ -571,7 +575,9 @@
 
 .desktop .form {
   height: 747px;
-  left: 336px;
+  /* left: 336px; */
+    left: 170px;
+
   position: absolute;
   top: 0;
   width: 856px;
@@ -648,6 +654,7 @@
 
 .desktop .radio-group {
   align-items: center;
+  font-family: "Gilroy-Medium", Helvetica;
   display: flex;
   gap: 45px;
   justify-content: center;
@@ -665,6 +672,7 @@
 
 .desktop .radio-input {
   height: 33px;
+  font-family: "Gilroy-Medium", Helvetica;
   left: 0;
   position: absolute;
   top: 0;
@@ -697,6 +705,7 @@
 
 .desktop .radio-input-2 {
   height: 33px;
+  font-family: "Gilroy-Medium", Helvetica;
   left: 0;
   position: absolute;
   top: 45px;
@@ -1172,6 +1181,13 @@
   overflow: hidden;
   padding: 26px 33px;
   position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
+
+}
+
+.desktop .as-wrapper:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);  /* Use transform property for scale */
 }
 
 .desktop .as {
@@ -1468,6 +1484,12 @@
   position: absolute;
   top: 287px;
   width: 176px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
+}
+
+.desktop .button-get-started:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);  /* Use transform property for scale */
 }
 
 .desktop .frame-3 {
@@ -1794,6 +1816,13 @@
   position: absolute;
   top: 327px;
   width: 254px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
+
+}
+
+.desktop .button-categories:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);  /* Use transform property for scale */
 }
 
 .desktop .overlap-12 {
@@ -2045,6 +2074,13 @@
   position: absolute;
   top: 357px;
   width: 254px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
+
+}
+
+.desktop .button-3:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);  /* Use transform property for scale */
 }
 
 .desktop .overlap-group-8 {
@@ -2074,9 +2110,26 @@
   display: inline-flex;
   gap: 70px;
   justify-content: flex-end;
-  left: 934px;
+  left: 834px;
   position: absolute;
   top: 70px;
+}
+
+.desktop .navbar a {
+  font-size: 30px;
+  font-family: "Gilroy-Semi", Helvetica;
+  /* margin-right: 50px; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
+
+
+}
+
+.desktop .navbar a:hover {
+  font-size: 30px;
+  font-family: "Gilroy-Semi", Helvetica;
+  /* margin-right: 50px; */
+  transform: scale(1.05);
+
 }
 
 .desktop .image-wrapper {
@@ -2094,3 +2147,25 @@
   top: 0;
   width: 53px;
 }
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start; /* or 'center' if you want the items centered */
+  gap: 10px;
+}
+
+.email-link {
+  margin-top: 5px;
+  font-size: 14px; /* Adjust as necessary */
+}
+
+.social-media-links {
+  margin-top: 10px;
+}
+
+.social-media-links a {
+  margin-right: 10px; /* Space between social media links */
+  font-size: 14px; /* Adjust as necessary */
+}
+
