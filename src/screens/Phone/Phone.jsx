@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { MobileMenu } from "../../components/MobileMenu/MobileMenu";
+import Input from "../../components/Input/Input";
 
 export const Phone = () => {
   const [mobileMenuState, setMobileMenuState] = useState(false);
@@ -76,7 +77,8 @@ export const Phone = () => {
               </div>
             </div>
             <div className="input-mobile" />
-            <input className="your-email" />
+            {/* <input className="your-email" /> */}
+            <Input className="input-mobile"/>
           </div>
         </div>
         <div className="testimonials-mobile" id="reviews-mobile">
