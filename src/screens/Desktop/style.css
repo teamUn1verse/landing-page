@@ -2117,7 +2117,7 @@ html {
 
 .desktop .navbar a {
   font-size: 30px;
-  font-family: "Gilroy-Semi", Helvetica;
+  font-family: "Gilroy-Semibold", Helvetica;
   /* margin-right: 50px; */
   transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
 
@@ -2126,7 +2126,7 @@ html {
 
 .desktop .navbar a:hover {
   font-size: 30px;
-  font-family: "Gilroy-Semi", Helvetica;
+  font-family: "Gilroy-Semibold", Helvetica;
   /* margin-right: 50px; */
   transform: scale(1.05);
 
