@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import "../../screens/Desktop/style.css";
 import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
+import db from "../../firebase";
+
 
 function CTA() {
   const [email, setEmail] = useState("");
@@ -16,9 +18,43 @@ function CTA() {
   };
 
   const handleSubmit = () => {
-    // This function will handle the form submission later
-    console.log('Form Submitted:', email, selections);
+    console.log("Email: ", email);  // Add this line
+
+    if (!email) {
+      alert("Please enter your email address");
+      return;
+    }
+    
+    // if (!validateEmail(email)) {
+    //   alert("Please enter a valid email address");
+    //   return;
+    // }
+    
+    const data = {
+      email: email,
+      ecoDes: selections.includes("Ecosystem designers"),
+      entEff: selections.includes("Entrepreneurs effectuators"),
+      entRes: selections.includes("Entrepreneurship researchers"),
+      serEnt: selections.includes("Serial entrepreneurs"),
+    };
+  
+    db.collection("subscriptions").add(data)
+      .then((docRef) => {
+        console.log("Document written with ID: ", docRef.id);
+      })
+      .catch((error) => {
+        console.error("Error adding document: ", error);
+      });
+  
+    setEmail('');
+    setSelections([]);
   };
+
+  // function validateEmail(email) {
+  //   const re = /^(([^<>()[]\.,;:\s@"]+(\.[^<>()[]\.,;:\s@"]+)*)|(".+"))@(([^<>()[]\.,;:\s@"]+\.[^<>()[]\.,;:\s@"]{2,}))$/;
+  //   return re.test(String(email).toLowerCase());
+  // }
+  
 
   return (
     <div className="form">
