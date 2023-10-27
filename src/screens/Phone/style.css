@@ -1612,17 +1612,14 @@
   width: 355px;
 }
 
-.phone .menu {
+.phone .menu-icon {
   height: 22px;
   left: 314px;
   position: absolute;
   top: 16px;
   width: 41px;
-}
-
-.phone .group-15 {
-  height: 22px;
-  position: relative;
+  border: none;
+  background: none;
 }
 
 .phone .rectangle-10 {

@@ -2,7 +2,6 @@ import React from "react";
 import "./style.css";
 import { useState } from "react";
 import Button from "../../components/Button/Button";
-import Input from "../../components/Input/Input";
 import Testimonial from "../../components/Testimonial/Testimonial";
 import Modal from "../../components/Modal/Modal";
 import CTA from "../../components/CTA/CTA";
@@ -146,11 +145,21 @@ export const Desktop = () => {
           </a>
           <div className="footer-menu" id="contact">
             <div className="frame-2">
-              <a href="#about-us" className="menu-item">About Us</a>
-              <a href="#reviews" className="menu-item">Reviews</a>
-              <a href="#podcast" className="menu-item">Podcast</a>
-              <a href="#categories" className="menu-item">Categories</a>
-              <a href="#contact" className="menu-item">Contact</a>
+              <a href="#about-us" className="menu-item">
+                About Us
+              </a>
+              <a href="#reviews" className="menu-item">
+                Reviews
+              </a>
+              <a href="#podcast" className="menu-item">
+                Podcast
+              </a>
+              <a href="#categories" className="menu-item">
+                Categories
+              </a>
+              <a href="#contact" className="menu-item">
+                Contact
+              </a>
             </div>
           </div>
           <img
@@ -413,14 +422,7 @@ export const Desktop = () => {
               </div>
             </div>
           </div>
-          <Button
-            className="button-get-started"
-            onClick={() => {
-              document
-                .getElementById("subscribe")
-                .scrollIntoView({ behavior: "smooth" });
-            }}
-          >
+          <Button className="button-get-started" href="#subscribe">
             Get Started
           </Button>
 
@@ -530,14 +532,7 @@ export const Desktop = () => {
               </div>
             </div>
           </div>
-          <Button
-            className="button-categories"
-            onClick={() => {
-              document
-                .getElementById("categories")
-                .scrollIntoView({ behavior: "smooth" });
-            }}
-          >
+          <Button className="button-categories" href="#subscribe">
             View All Categories
           </Button>
         </div>
@@ -553,21 +548,15 @@ export const Desktop = () => {
               business you enjoy
             </p>
             <div className="h-9">of the world</div>
-            {/* <Button className="button-3">Get Started</Button> */}
-            <Button
-              className="button-3"
-              onClick={() => {
-                document
-                  .getElementById("subscribe")
-                  .scrollIntoView({ behavior: "smooth" });
-              }}
-            >
+            <Button className="button-3" href="#subscribe">
               Get Started
             </Button>
           </div>
         </div>
         <div className="navbar">
-          <a href="#about-us" className="menu-item">About Us</a>
+          <a href="#about-us" className="menu-item">
+            About Us
+          </a>
           <a href="#reviews" className="menu-item">
             Reviews
           </a>

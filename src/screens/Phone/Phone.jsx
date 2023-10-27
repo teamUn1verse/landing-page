@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
+import { MobileMenu } from "../../components/MobileMenu/MobileMenu";
+import Input from "../../components/Input/Input";
 
 export const Phone = () => {
+  const [mobileMenuState, setMobileMenuState] = useState(false);
     return (
     <div className="phone">
       <div className="div">
@@ -19,7 +22,7 @@ export const Phone = () => {
           </div>
           <a
             className="copyrights-2"
-            href="https://policies.google.com/privacy?hl=en-US"
+            href="#"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -74,10 +77,11 @@ export const Phone = () => {
               </div>
             </div>
             <div className="input-mobile" />
-            <input className="your-email" />
+            {/* <input className="your-email" /> */}
+            <Input className="input-mobile"/>
           </div>
         </div>
-        <div className="testimonials-mobile">
+        <div className="testimonials-mobile" id="reviews-mobile">
           <div className="tagline-3">Subscribers about U-interviews</div>
           <div className="title">
             <div className="overlap-group-3">
@@ -110,7 +114,7 @@ export const Phone = () => {
             <img className="group-8" alt="Group" src="/img/group-75.png" />
           </div>
         </div>
-        <div className="categories-mobile">
+        <div className="categories-mobile" id="categories-mobile">
           <button className="button">
             <div className="div-wrapper">
               <div className="frame-2">
@@ -179,7 +183,7 @@ export const Phone = () => {
             </div>
           </div>
         </div>
-        <div className="value-section-mobile">
+        <div className="value-section-mobile" id="value-for-u">
           <div className="title-3">
             <div className="overlap-group-6">
               <div className="rectangle-7" />
@@ -218,7 +222,7 @@ export const Phone = () => {
             Get Started
           </Button>
         </div>
-        <div className="what-section-mobile">
+        <div className="what-section-mobile" id="about-us-mobile">
           <p className="tagline-13">
             are empathic
             <br /> in-depth interviews with&nbsp;&nbsp;entrepreneurs
@@ -288,13 +292,10 @@ export const Phone = () => {
           </div>
         </div>
         <header className="header">
-          <div className="menu">
-            <div className="group-15">
-              <div className="rectangle-10" />
-              <div className="rectangle-11" />
-              <div className="rectangle-12" />
-            </div>
-          </div>
+          <MobileMenu onClose={()=>{setMobileMenuState(false)}} isOpened={mobileMenuState}/>
+          <button className="menu-icon" onClick={()=>{setMobileMenuState(true)}}>
+            <img src="/img/menu-icon.svg" alt="menu-icon" />
+          </button>
           <div className="logo">
             <div className="group">
               <div className="group-2">

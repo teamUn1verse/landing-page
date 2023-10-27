@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import "../../screens/Desktop/style.css";
 import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
@@ -6,7 +6,8 @@ import db from "../../firebase";
 
 
 function CTA() {
-  const [email, setEmail] = useState("");
+  // const [email, setEmail] = useState("");
+  const emailRef = useRef();
   const [selections, setSelections] = useState([]);
 
   const handleCheckboxChange = (e) => {
@@ -57,7 +58,7 @@ function CTA() {
   
 
   return (
-    <div className="form">
+    <form className="form" onSubmit={handleSubmit}>
       <div className="overlap-5">
         <p className="form-title">
           Subscribe today and get your "Empathy in business communications" guidebook
@@ -109,15 +110,15 @@ function CTA() {
           <Input 
             className="input-email" 
             placeholder="Your Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            // value={}
+            ref={emailRef}
           />
         </div>
-        <Button className="submit-button" onClick={handleSubmit}>
-          Subscribe
-        </Button>
+        <button className={`btn submit-button`} type='submit'>
+          <div className="btn__text">Subscribe</div>
+        </button>
       </div>
-    </div>
+    </form>
   );
 }
 
