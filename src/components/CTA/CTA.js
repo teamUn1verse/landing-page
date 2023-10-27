@@ -39,7 +39,7 @@ function CTA() {
       serEnt: selections.includes("Serial entrepreneurs"),
     };
   
-    db.collection("subscriptions").add(data)
+    db.collection("subscriptions-lp1").add(data)
       .then((docRef) => {
         console.log("Document written with ID: ", docRef.id);
       })
