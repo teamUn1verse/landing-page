@@ -575,9 +575,8 @@ html {
 
 .desktop .form {
   height: 747px;
-  /* left: 336px; */
-    left: 170px;
-
+  left: 336px;
+    /* left: 170px; */
   position: absolute;
   top: 0;
   width: 856px;
@@ -1181,13 +1180,12 @@ html {
   overflow: hidden;
   padding: 26px 33px;
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
-
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease;   */
 }
 
 .desktop .as-wrapper:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);  /* Use transform property for scale */
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);  */
 }
 
 .desktop .as {
@@ -1484,12 +1482,12 @@ html {
   position: absolute;
   top: 287px;
   width: 176px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease;   */
 }
 
 .desktop .button-get-started:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);  /* Use transform property for scale */
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);  */
 }
 
 .desktop .frame-3 {
@@ -1816,13 +1814,12 @@ html {
   position: absolute;
   top: 327px;
   width: 254px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
-
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease;  */
 }
 
 .desktop .button-categories:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);  /* Use transform property for scale */
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);  */
 }
 
 .desktop .overlap-12 {
@@ -2074,13 +2071,12 @@ html {
   position: absolute;
   top: 357px;
   width: 254px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
-
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease;   */
 }
 
 .desktop .button-3:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  transform: scale(1.05);  /* Use transform property for scale */
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);   */
 }
 
 .desktop .overlap-group-8 {
@@ -2110,28 +2106,10 @@ html {
   display: inline-flex;
   gap: 70px;
   justify-content: flex-end;
-  left: 834px;
+  left: 934px;
   position: absolute;
   top: 70px;
 }
-
-.desktop .navbar a {
-  font-size: 30px;
-  font-family: "Gilroy-Semibold", Helvetica;
-  /* margin-right: 50px; */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Adding transition for scale (transform) and box-shadow */
-
-
-}
-
-.desktop .navbar a:hover {
-  font-size: 30px;
-  font-family: "Gilroy-Semibold", Helvetica;
-  /* margin-right: 50px; */
-  transform: scale(1.05);
-
-}
-
 .desktop .image-wrapper {
   height: 53px;
   left: 375px;

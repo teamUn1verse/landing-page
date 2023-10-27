@@ -1,12 +1,11 @@
 import React from "react";
 import "./style.css";
-import { useState } from 'react';
+import { useState } from "react";
 import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
-import Testimonial from '../../components/Testimonial/Testimonial';
-import Modal from '../../components/Modal/Modal';
-import CTA from '../../components/CTA/CTA';
-
+import Testimonial from "../../components/Testimonial/Testimonial";
+import Modal from "../../components/Modal/Modal";
+import CTA from "../../components/CTA/CTA";
 
 export const Desktop = () => {
   const handleSubmit = () => {
@@ -19,13 +18,13 @@ export const Desktop = () => {
       name: "Irene Buller",
       position: "Senior Consultant, EY, Switzerland",
       text: "...",
-      photo: "/img/testimonial-photo.png"
+      photo: "/img/testimonial-photo.png",
     },
     {
       name: "Ja R",
       position: "Senior Consultant, EY, Switzerland",
       text: "...",
-      photo: "/img/testimonial-photo.png"
+      photo: "/img/testimonial-photo.png",
     },
     // ... add more testimonials
   ];
@@ -35,18 +34,19 @@ export const Desktop = () => {
   };
 
   const handlePrev = () => {
-    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setCurrentTestimonial(
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+    );
   };
 
   const [activeModal, setActiveModal] = useState(null);
-
 
   return (
     <div className="desktop">
       <div className="div">
         <div className="overlap">
           <div className="ellipse" />
-          <div className="what-section">
+          <div className="what-section" id="about-us">
             <div className="tag">
               <div className="overlap-group">
                 <div className="borders" />
@@ -146,25 +146,13 @@ export const Desktop = () => {
           </a>
           <div className="footer-menu" id="contact">
             <div className="frame-2">
-              {/* <a className="menu-item">About Us</a> */}
-              {/* <a href="#reviews" className="menu-item">Reviews</a> */}
-              {/* <a href="#podcast" className="menu-item">Podcast</a> */}
-              {/* <a href="#categories" className="menu-item">Categories</a> */}
-              <div className="contact-section">
-                <a className="menu-item">Contact</a>
-                <a href="mailto:example@email.com" className="email-link">example@email.com</a>
-                <div className="social-media-links">
-                  <a href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
-                  <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                  {/* ... other social media links ... */}
-              </div>
+              <a href="#about-us" className="menu-item">About Us</a>
+              <a href="#reviews" className="menu-item">Reviews</a>
+              <a href="#podcast" className="menu-item">Podcast</a>
+              <a href="#categories" className="menu-item">Categories</a>
+              <a href="#contact" className="menu-item">Contact</a>
             </div>
-        </div>
-
-
-
-    </div>
+          </div>
           <img
             className="footer-line"
             alt="Footer line"
@@ -240,52 +228,7 @@ export const Desktop = () => {
 
         <div className="subscribe-section" id="subscribe">
           <div className="overlap-4">
-
-            <div className="form">
             <CTA />
-{/* 
-              <div className="overlap-5">
-                <p className="form-title">
-                  Subscribe today and get your &#34;Empathy in business
-                  communications&#34; guidebook
-                </p>
-                <div className="label">Select an option</div>
-                <div className="radio-group">
-                  <div className="col">
-                    <div className="radio-input">
-                      <div className="text-wrapper-7">
-                        Entrepreneurs effectuators
-                      </div>
-                      <div className="ellipse-7" />
-                    </div>
-                    <div className="radio-input-2">
-                      <div className="text-wrapper-7">
-                        Entrepreneurship researchers
-                      </div>
-                      <div className="div-2">
-                        <div className="ellipse-8" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-2">
-                    <div className="radio-input-3">
-                      <div className="text-wrapper-8">Ecosystem designers</div>
-                      <div className="div-2" />
-                    </div>
-                    <div className="radio-input-4">
-                      <div className="text-wrapper-8">Serial entrepreneurs</div>
-                      <div className="ellipse-7" />
-                    </div>
-                  </div>
-                </div>
-                <div className="input">
-                  <Input className="input-email" placeholder="Your Email"/>
-                </div>
-                <Button className="submit-button" onClick={handleSubmit}>
-                  Subscribe
-                </Button>
-              </div> */}
-            </div>
             <div className="overlap-wrapper">
               <div className="overlap-6">
                 <div className="borders-2" />
@@ -314,62 +257,101 @@ export const Desktop = () => {
           <div className="categories-list">
             <div className="cat-item">
               <div className="frame-wrapper">
-              <div className="as-wrapper" onClick={() => setActiveModal('effectuators')}>
+                <div
+                  className="as-wrapper"
+                  onClick={() => setActiveModal("effectuators")}
+                >
                   <div className="as">Entrepreneurs Effectuators</div>
                 </div>
 
-                <Modal 
-                    isVisible={activeModal === 'effectuators'} 
-                    onClose={() => setActiveModal(null)}
+                <Modal
+                  isVisible={activeModal === "effectuators"}
+                  onClose={() => setActiveModal(null)}
                 >
-                    <h3>Entrepreneurs Effectuators</h3>
-                    <p>Delve into the world of Entrepreneurs Effectuators, where ideas evolve into tangible businesses. These are the pioneers who leverage uncertainty and turn constraints into innovative solutions. Their hands-on approach, adaptive thinking, and keen insight into market demands make them stand out. Discover their stories, strategies, and the unique effectuation principles that guide their entrepreneurial journey.</p>                
-                
+                  <h3>Entrepreneurs Effectuators</h3>
+                  <p>
+                    Delve into the world of Entrepreneurs Effectuators, where
+                    ideas evolve into tangible businesses. These are the
+                    pioneers who leverage uncertainty and turn constraints into
+                    innovative solutions. Their hands-on approach, adaptive
+                    thinking, and keen insight into market demands make them
+                    stand out. Discover their stories, strategies, and the
+                    unique effectuation principles that guide their
+                    entrepreneurial journey.
+                  </p>
                 </Modal>
-
               </div>
             </div>
             <div className="cat-item-2">
-            <div className="as-wrapper" onClick={() => setActiveModal('serial')}>
+              <div
+                className="as-wrapper"
+                onClick={() => setActiveModal("serial")}
+              >
                 <div className="as-2">Serial Entrepreneurs</div>
               </div>
-              <Modal 
-                  isVisible={activeModal === 'serial'} 
-                  onClose={() => setActiveModal(null)}
+              <Modal
+                isVisible={activeModal === "serial"}
+                onClose={() => setActiveModal(null)}
               >
-                  <h3>Serial Entrepreneurs</h3>
-                  <p>Meet the relentless visionaries who've mastered the art of starting multiple successful ventures. Serial Entrepreneurs are not just about multiple businesses; they're about resilience, adaptability, and a relentless pursuit of innovation. Every failure is a stepping stone, every success a testament to their indomitable spirit. Dive into their multifaceted journeys and glean insights into building, scaling, and transitioning across various industries.</p>
-
+                <h3>Serial Entrepreneurs</h3>
+                <p>
+                  Meet the relentless visionaries who've mastered the art of
+                  starting multiple successful ventures. Serial Entrepreneurs
+                  are not just about multiple businesses; they're about
+                  resilience, adaptability, and a relentless pursuit of
+                  innovation. Every failure is a stepping stone, every success a
+                  testament to their indomitable spirit. Dive into their
+                  multifaceted journeys and glean insights into building,
+                  scaling, and transitioning across various industries.
+                </p>
               </Modal>
-
             </div>
             <div className="cat-item-3">
-            <div className="as-wrapper" onClick={() => setActiveModal('researchers')}>
+              <div
+                className="as-wrapper"
+                onClick={() => setActiveModal("researchers")}
+              >
                 <div className="as-3">Entrepreneurship Researchers</div>
               </div>
-              <Modal 
-                  isVisible={activeModal === 'researchers'} 
-                  onClose={() => setActiveModal(null)}
+              <Modal
+                isVisible={activeModal === "researchers"}
+                onClose={() => setActiveModal(null)}
               >
-                  <h3>Entrepreneurship Researchers</h3>
-                  <p>Behind every thriving entrepreneurial ecosystem lies the meticulous work of Entrepreneurship Researchers. These are the individuals who dissect, analyze, and present the intricacies of entrepreneurial phenomena. Their rigorous studies provide budding entrepreneurs with frameworks, theories, and data-driven insights. Explore the latest findings, trends, and academic perspectives that are shaping the future of entrepreneurship.</p>
-                  
+                <h3>Entrepreneurship Researchers</h3>
+                <p>
+                  Behind every thriving entrepreneurial ecosystem lies the
+                  meticulous work of Entrepreneurship Researchers. These are the
+                  individuals who dissect, analyze, and present the intricacies
+                  of entrepreneurial phenomena. Their rigorous studies provide
+                  budding entrepreneurs with frameworks, theories, and
+                  data-driven insights. Explore the latest findings, trends, and
+                  academic perspectives that are shaping the future of
+                  entrepreneurship.
+                </p>
               </Modal>
-
             </div>
             <div className="cat-item-4">
-            <div className="as-wrapper" onClick={() => setActiveModal('designers')}>
+              <div
+                className="as-wrapper"
+                onClick={() => setActiveModal("designers")}
+              >
                 <div className="as-4">Ecosystem Designers</div>
               </div>
-              <Modal 
-                  isVisible={activeModal === 'designers'} 
-                  onClose={() => setActiveModal(null)}
+              <Modal
+                isVisible={activeModal === "designers"}
+                onClose={() => setActiveModal(null)}
               >
-                  <h3>Ecosystem Designers</h3>
-                  <p>Crafting a conducive environment for startups and innovators is no small feat. Ecosystem Designers are the architects behind thriving entrepreneurial landscapes. They cultivate networks, foster collaborations, and design platforms that facilitate growth, innovation, and sustainability. Discover the strategies employed by these visionaries to create ecosystems where ideas flourish and businesses thrive.</p>
-                  
+                <h3>Ecosystem Designers</h3>
+                <p>
+                  Crafting a conducive environment for startups and innovators
+                  is no small feat. Ecosystem Designers are the architects
+                  behind thriving entrepreneurial landscapes. They cultivate
+                  networks, foster collaborations, and design platforms that
+                  facilitate growth, innovation, and sustainability. Discover
+                  the strategies employed by these visionaries to create
+                  ecosystems where ideas flourish and businesses thrive.
+                </p>
               </Modal>
-
             </div>
           </div>
           <img
@@ -431,15 +413,17 @@ export const Desktop = () => {
               </div>
             </div>
           </div>
-          <Button 
-              className="button-get-started" 
-              onClick={() => {
-                  document.getElementById('subscribe').scrollIntoView({ behavior: 'smooth' });
-              }}
+          <Button
+            className="button-get-started"
+            onClick={() => {
+              document
+                .getElementById("subscribe")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
           >
-              Get Started
+            Get Started
           </Button>
-          
+
           <div className="h-3">
             <div className="tagline-7">U-values</div>
           </div>
@@ -546,17 +530,18 @@ export const Desktop = () => {
               </div>
             </div>
           </div>
-          <Button 
-              className="button-categories" 
-              onClick={() => {
-                  document.getElementById('categories').scrollIntoView({ behavior: 'smooth' });
-              }}
+          <Button
+            className="button-categories"
+            onClick={() => {
+              document
+                .getElementById("categories")
+                .scrollIntoView({ behavior: "smooth" });
+            }}
           >
-              View All Categories
+            View All Categories
           </Button>
         </div>
         <div className="starting-section">
-
           <div className="overlap-14">
             <div className="overlap-15">
               <div className="borders-5" />
@@ -569,23 +554,32 @@ export const Desktop = () => {
             </p>
             <div className="h-9">of the world</div>
             {/* <Button className="button-3">Get Started</Button> */}
-            <Button 
-                className="button-3" 
-                onClick={() => {
-                    document.getElementById('subscribe').scrollIntoView({ behavior: 'smooth' });
-                }}
+            <Button
+              className="button-3"
+              onClick={() => {
+                document
+                  .getElementById("subscribe")
+                  .scrollIntoView({ behavior: "smooth" });
+              }}
             >
-                Get Started
+              Get Started
             </Button>
-
           </div>
         </div>
         <div className="navbar">
-          {/* <a href="#about-us" className="menu-item">About Us</a> */}
-          <a href="#reviews" className="menu-item">Reviews</a>
-          <a href="#podcast" className="menu-item">Podcast</a>
-          <a href="#categories" className="menu-item">Categories</a>
-          <a href="#contact" className="menu-item">Contact</a>
+          <a href="#about-us" className="menu-item">About Us</a>
+          <a href="#reviews" className="menu-item">
+            Reviews
+          </a>
+          <a href="#podcast" className="menu-item">
+            Podcast
+          </a>
+          <a href="#categories" className="menu-item">
+            Categories
+          </a>
+          <a href="#contact" className="menu-item">
+            Contact
+          </a>
         </div>
         <div className="image-wrapper">
           <div className="div-wrapper">

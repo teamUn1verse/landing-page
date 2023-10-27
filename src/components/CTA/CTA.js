@@ -26,7 +26,7 @@ function CTA() {
         <p className="form-title">
           Subscribe today and get your "Empathy in business communications" guidebook
         </p>
-        <div className="label"style={{ display: 'flex', alignItems: 'center', color: 'black', fontSize: '24px'}}> Select an option</div>
+        <div className="label"> Select an option</div>
         <div className="radio-group">
           <div className="col">
             <label className="radio-input" style={{ display: 'flex', alignItems: 'center', fontSize: '20px'}}>
