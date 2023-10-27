@@ -3,10 +3,11 @@ import "../../screens/Desktop/style.css";
 import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
 import db from "../../firebase";
+import { collection, addDoc } from "firebase/firestore"; 
+
 
 
 function CTA() {
-  // const [email, setEmail] = useState("");
   const emailRef = useRef();
   const [selections, setSelections] = useState([]);
 
@@ -18,19 +19,18 @@ function CTA() {
     }
   };
 
-  const handleSubmit = () => {
-    console.log("Email: ", email);  // Add this line
+  const handleSubmit = async (e) => {
+    e.preventDefault();  // Prevent default form submission
+
+    const email = emailRef.current.value;  // Get value from ref
+
+    console.log("Email: ", email);
 
     if (!email) {
       alert("Please enter your email address");
       return;
     }
-    
-    // if (!validateEmail(email)) {
-    //   alert("Please enter a valid email address");
-    //   return;
-    // }
-    
+
     const data = {
       email: email,
       ecoDes: selections.includes("Ecosystem designers"),
@@ -38,24 +38,20 @@ function CTA() {
       entRes: selections.includes("Entrepreneurship researchers"),
       serEnt: selections.includes("Serial entrepreneurs"),
     };
-  
-    db.collection("subscriptions-lp1").add(data)
-      .then((docRef) => {
-        console.log("Document written with ID: ", docRef.id);
-      })
-      .catch((error) => {
-        console.error("Error adding document: ", error);
-      });
-  
-    setEmail('');
-    setSelections([]);
+
+    try {
+      const docRef = await addDoc(collection(db, "subscriptions-lp1"), data);
+      console.log("Document written with ID: ", docRef.id);
+      alert("Subscription successful!");
+      emailRef.current.value = '';  // Clear email input
+      setSelections([]);
+    } catch (error) {
+      console.error("Error adding document: ", error);
+      alert("Subscription failed. Please try again.");
+    }
   };
 
-  // function validateEmail(email) {
-  //   const re = /^(([^<>()[]\.,;:\s@"]+(\.[^<>()[]\.,;:\s@"]+)*)|(".+"))@(([^<>()[]\.,;:\s@"]+\.[^<>()[]\.,;:\s@"]{2,}))$/;
-  //   return re.test(String(email).toLowerCase());
-  // }
-  
+
 
   return (
     <form className="form" onSubmit={handleSubmit}>
