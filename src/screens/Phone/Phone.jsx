@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 export const Phone = () => {
-  return (
+    return (
     <div className="phone">
       <div className="div">
         <div className="footer-mobile">
@@ -27,7 +27,7 @@ export const Phone = () => {
           </a>
           <img className="hr-line-mobile" alt="Hr line mobile" src="/img/hr-line-mobile.png" />
         </div>
-        <div className="form-mobile">
+        <div className="form-mobile" id="subscribe-mobile">
           <div className="overlap">
             <div className="group-wrapper">
               <div className="overlap-wrapper">
@@ -143,12 +143,17 @@ export const Phone = () => {
           <img className="long-hair-girl" alt="Long hair girl" src="/img/long-hair-girl.png" />
         </div>
         <div className="u-values-section">
-          <button className="button-5">
+          {/* <button className="button-5">
             <div className="frame-2">
               <div className="tagline-7">Get Started</div>
             </div>
-          </button>
-          <p className="text-wrapper-7">Sharing achievements between business researchers and entrepreneurs</p>
+          </button> */}
+          <Button className="button-5 " href="#subscribe-mobile">
+            Get Started
+          </Button>
+          <p className="text-wrapper-7">
+            Sharing achievements between business researchers and entrepreneurs
+          </p>
           <div className="text-wrapper-8">Research</div>
           <div className="item-research-mobile">
             <img className="icon-zoom-mobile" alt="Icon zoom mobile" src="/img/icon-zoom-mobile.png" />
@@ -204,11 +209,14 @@ export const Phone = () => {
               <div className="text-wrapper-17">#Popular</div>
             </div>
           </div>
-          <button className="button-6">
+          {/* <button className="button-6">
             <div className="tagline-wrapper">
               <div className="tagline-12">View All Categories</div>
             </div>
-          </button>
+          </button> */}
+          <Button className="button-6 " href="#subscribe-mobile">
+            Get Started
+          </Button>
         </div>
         <div className="what-section-mobile">
           <p className="tagline-13">
@@ -274,11 +282,9 @@ export const Phone = () => {
             <div className="tagline-16">entrepreneurial mindsets</div>
             <p className="tagline-17">Empathy-based learning of how to spend your lifetime doing business you enjoy</p>
             <div className="tagline-18">of the world</div>
-            <button className="button-7">
-              <div className="h-tagline-wrapper">
-                <div className="tagline-19">Get Started</div>
-              </div>
-            </button>
+            <Button className="button-7 " href="#subscribe-mobile">
+              Get Started
+            </Button>
           </div>
         </div>
         <header className="header">

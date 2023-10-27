@@ -610,13 +610,14 @@
 }
 
 .phone .button {
-  all: unset;
   box-sizing: border-box;
   height: 68px;
   left: 14px;
   position: absolute;
   top: 239px;
   width: 314px;
+  border: none;
+  background: transparent;
 }
 
 .phone .div-wrapper {
@@ -704,13 +705,14 @@
 }
 
 .phone .button-2 {
-  all: unset;
   box-sizing: border-box;
   height: 69px;
   left: 45px;
   position: absolute;
   top: 416px;
   width: 252px;
+  border: none;
+  background: transparent;
 }
 
 .phone .as-2 {
@@ -728,13 +730,14 @@
 }
 
 .phone .button-3 {
-  all: unset;
   box-sizing: border-box;
   height: 69px;
   left: 0;
   position: absolute;
   top: 327px;
   width: 341px;
+  border: none;
+  background: transparent;
 }
 
 .phone .as-3 {
@@ -752,13 +755,14 @@
 }
 
 .phone .button-4 {
-  all: unset;
   box-sizing: border-box;
   height: 69px;
   left: 42px;
   position: absolute;
   top: 505px;
   width: 258px;
+  border: none;
+  background: transparent;
 }
 
 .phone .as-4 {
@@ -792,13 +796,14 @@
 }
 
 .phone .button-5 {
-  all: unset;
   box-sizing: border-box;
   height: 68px;
   left: 39px;
   position: absolute;
   top: 1444px;
   width: 176px;
+  border: none;
+  background: transparent;
 }
 
 .phone .tagline-7 {
@@ -1203,7 +1208,6 @@
 }
 
 .phone .button-6 {
-  all: unset;
   box-sizing: border-box;
   height: 69px;
   left: 60px;
@@ -1570,7 +1574,6 @@
 }
 
 .phone .button-7 {
-  all: unset;
   box-sizing: border-box;
   height: 69px;
   left: 60px;
@@ -1579,27 +1582,26 @@
   width: 254px;
 }
 
-.phone .h-tagline-wrapper {
+/* .phone .h-tagline-wrapper {
   background-color: #f7635d;
   border-radius: 50px;
   height: 69px;
   position: relative;
   width: 252px;
-}
+} */
 
-.phone .tagline-19 {
-  color: #ffffff;
+/* .phone .tagline-19 {
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
   font-weight: 400;
   left: 71px;
+  top: 26px;
   letter-spacing: 0;
   line-height: 24px;
   position: absolute;
-  top: 26px;
   white-space: nowrap;
   width: 111px;
-}
+} */
 
 .phone .header {
   background-color: transparent;

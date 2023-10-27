@@ -3,7 +3,7 @@ import "./styles.scss";
 
 export default Button = (props) => {
   const customClassName = props.className ? props.className : "";
-  const href = props.href ? props.href : "javascript:";
+  const href = props.href ? props.href : "#";
   const customOnClick = props.onClick ? props.onClick : null;
   return (
     <a className={`btn ${customClassName}`} href={href} onClick={customOnClick}>
