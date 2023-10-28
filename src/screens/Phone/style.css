@@ -109,7 +109,6 @@
 
 .phone .form-mobile {
   height: 1323px;
-  left: -62px;
   position: absolute;
   top: 8252px;
   width: 524px;
@@ -125,6 +124,7 @@
 .phone .group-wrapper {
   height: 1032px;
   left: 11px;
+  left: 73px;
   position: absolute;
   top: 0;
   width: 356px;
@@ -166,7 +166,7 @@
 
 .phone .overlap-group-wrapper {
   height: 59px;
-  left: 0;
+  left: 11px;
   position: absolute;
   top: 0;
   width: 358px;
@@ -242,7 +242,7 @@
   height: 345px;
   left: 137px;
   position: absolute;
-  top: 978px;
+  top: 978px;  /* top: 850px; */
   width: 238px;
 }
 
@@ -250,7 +250,7 @@
   height: 326px;
   left: 0;
   position: absolute;
-  top: 951px;
+  top: 951px;  /* top: 830px; */
   width: 230px;
 }
 

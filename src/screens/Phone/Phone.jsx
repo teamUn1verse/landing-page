@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import { MobileMenu } from "../../components/MobileMenu/MobileMenu";
-import Input from "../../components/Input/Input";
+import CTA from "../../components/CTA/CTA";
 
 export const Phone = () => {
   const [mobileMenuState, setMobileMenuState] = useState(false);
@@ -31,55 +31,15 @@ export const Phone = () => {
           <img className="hr-line-mobile" alt="Hr line mobile" src="/img/hr-line-mobile.png" />
         </div>
         <div className="form-mobile" id="subscribe-mobile">
-          <div className="overlap">
-            <div className="group-wrapper">
-              <div className="overlap-wrapper">
-                <div className="overlap-group">
-                  <div className="rectangle" />
-                  <p className="tagline">
-                    Subscribe today and get your &#34;Empathy in business communications&#34; guidebook
-                  </p>
-                  <div className="overlap-group-wrapper">
-                    <div className="overlap-group-2">
-                      <div className="rectangle-2" />
-                      <div className="h-tagline">Subscribe to our newsletter</div>
-                    </div>
-                  </div>
-                  <div className="frame-wrapper">
-                    <div className="frame">
-                      <div className="tagline-2">Subscribe</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <img className="woman" alt="Woman" src="/img/woman.png" />
-            <img className="man" alt="Man" src="/img/man.png" />
-            <div className="select-cat-mobile">
-              <div className="group-3">
-                <div className="text-wrapper-2">Entrepreneurs effectuators</div>
-                <div className="ellipse" />
-              </div>
-              <div className="group-4">
-                <div className="text-wrapper-2">Entrepreneurship researchers</div>
-                <div className="div-2">
-                  <div className="ellipse-2" />
-                </div>
-              </div>
-              <div className="text-wrapper-3">Select an option</div>
-              <div className="group-5">
-                <div className="text-wrapper-4">Serial entrepreneurs</div>
-                <div className="ellipse" />
-              </div>
-              <div className="group-6">
-                <div className="text-wrapper-4">Ecosystem designers</div>
-                <div className="div-2" />
-              </div>
-            </div>
-            <div className="input-mobile" />
-            {/* <input className="your-email" /> */}
-            <Input className="input-mobile"/>
+        <div className="overlap-group-wrapper">
+          <div className="overlap-group-2">
+            <div className="rectangle-2" />
+            <div className="h-tagline">Subscribe to our newsletter</div>
           </div>
+        </div>
+        <CTA/>
+        <img className="woman" alt="Woman" src="/img/woman.png" />
+        <img className="man" alt="Man" src="/img/man.png" />
         </div>
         <div className="testimonials-mobile" id="reviews-mobile">
           <div className="tagline-3">Subscribers about U-interviews</div>

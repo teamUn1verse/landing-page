@@ -663,20 +663,6 @@ html {
   width: 575px;
 }
 
-.desktop .col {
-  height: 78px;
-  position: relative;
-  width: 306px;
-}
-
-.desktop .radio-input {
-  height: 33px;
-  font-family: "Gilroy-Medium", Helvetica;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 284px;
-}
 
 .desktop .text-wrapper-7 {
   color: #3e3e3c;
@@ -702,14 +688,7 @@ html {
   width: 20px;
 }
 
-.desktop .radio-input-2 {
-  height: 33px;
-  font-family: "Gilroy-Medium", Helvetica;
-  left: 0;
-  position: absolute;
-  top: 45px;
-  width: 308px;
-}
+
 
 .desktop .div-2 {
   border: 1px solid;
@@ -732,19 +711,8 @@ html {
   width: 16px;
 }
 
-.desktop .col-2 {
-  height: 78px;
-  position: relative;
-  width: 224px;
-}
 
-.desktop .radio-input-3 {
-  height: 33px;
-  left: 0;
-  position: absolute;
-  top: 45px;
-  width: 226px;
-}
+
 
 .desktop .text-wrapper-8 {
   color: #3e3e3c;
@@ -759,13 +727,6 @@ html {
   white-space: nowrap;
 }
 
-.desktop .radio-input-4 {
-  height: 33px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 225px;
-}
 
 .desktop .input {
   background-color: #ffffff;
