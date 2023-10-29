@@ -9,5 +9,6 @@ root.render(
   <>
     <Desktop />
     <Phone />
+    <div id="subscribe" className="subscribe-anchor"></div>
   </>
 );

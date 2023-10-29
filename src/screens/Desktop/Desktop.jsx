@@ -170,72 +170,18 @@ export const Desktop = () => {
           <div className="logo">
             <div className="div-wrapper">
               <div className="group-8">
-                <div className="overlap-group-2">
-                  <img
-                    className="vector-3"
-                    alt="Vector"
-                    src="/img/vector-11.png"
+
+                  <img width="53px" height="53px"
+                    src="/img/image-logo.png"
                   />
-                  <img
-                    className="vector-4"
-                    alt="Vector"
-                    src="/img/vector-10.png"
-                  />
-                  <div className="overlap-3">
-                    <img
-                      className="vector-5"
-                      alt="Vector"
-                      src="/img/vector-5.png"
-                    />
-                    <img
-                      className="vector-6"
-                      alt="Vector"
-                      src="/img/vector-8.png"
-                    />
-                    <img
-                      className="vector-7"
-                      alt="Vector"
-                      src="/img/vector-7.png"
-                    />
-                    <img
-                      className="vector-8"
-                      alt="Vector"
-                      src="/img/vector-6.png"
-                    />
-                    <img
-                      className="vector-5"
-                      alt="Vector"
-                      src="/img/vector-5.png"
-                    />
-                    <img
-                      className="vector-9"
-                      alt="Vector"
-                      src="/img/vector-4.png"
-                    />
-                    <img
-                      className="vector-10"
-                      alt="Vector"
-                      src="/img/vector-3.png"
-                    />
-                    <img
-                      className="vector-11"
-                      alt="Vector"
-                      src="/img/vector-2.png"
-                    />
-                    <img
-                      className="vector-12"
-                      alt="Vector"
-                      src="/img/vector-1.png"
-                    />
-                  </div>
-                </div>
+
                 <div className="text-wrapper-6">U-Universe</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="subscribe-section" id="subscribe">
+        <div className="subscribe-section">
           <div className="overlap-4">
             <CTA />
             <div className="overlap-wrapper">
@@ -268,7 +214,7 @@ export const Desktop = () => {
               <div className="frame-wrapper">
                 <div
                   className="as-wrapper"
-                  onClick={() => setActiveModal("effectuators")}
+                  // onClick={() => setActiveModal("effectuators")}
                 >
                   <div className="as">Entrepreneurs Effectuators</div>
                 </div>
@@ -294,7 +240,7 @@ export const Desktop = () => {
             <div className="cat-item-2">
               <div
                 className="as-wrapper"
-                onClick={() => setActiveModal("serial")}
+                // onClick={() => setActiveModal("serial")}
               >
                 <div className="as-2">Serial Entrepreneurs</div>
               </div>
@@ -318,7 +264,7 @@ export const Desktop = () => {
             <div className="cat-item-3">
               <div
                 className="as-wrapper"
-                onClick={() => setActiveModal("researchers")}
+                // onClick={() => setActiveModal("researchers")}
               >
                 <div className="as-3">Entrepreneurship Researchers</div>
               </div>
@@ -342,7 +288,7 @@ export const Desktop = () => {
             <div className="cat-item-4">
               <div
                 className="as-wrapper"
-                onClick={() => setActiveModal("designers")}
+                // onClick={() => setActiveModal("designers")}
               >
                 <div className="as-4">Ecosystem Designers</div>
               </div>

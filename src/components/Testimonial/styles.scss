@@ -1,4 +1,8 @@
 // Common
+.overlap-7,
+.overlap-7 * {
+  user-select: none;
+}
 .testimonial-rectangle {
   background-color: #ffffff;
   border: 2px solid;
@@ -83,6 +87,9 @@
 
 // Desktop
 .desktop {
+  .overlap-7 {
+    overflow: hidden;
+  }
   .testimonial-rectangle {
     width: 1155px;
     height: 395px;
@@ -129,6 +136,10 @@
 }
 // Phone
 .phone {
+  .overlap-7 {
+    margin-top: 274px;
+    overflow: visible;
+  }
   .testimonial-rectangle {
     border: 2px solid #f6c943;
     border-radius: 26px;
@@ -273,16 +284,6 @@
   }
 }
 
-.overlap-7,
-.overlap-7 * {
-  user-select: none;
-}
-.desktop .overlap-7 {
-  overflow: hidden;
-}
-.phone .overlap-7 {
-  overflow: visible;
-}
 
 
 

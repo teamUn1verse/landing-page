@@ -44,13 +44,13 @@ export const Phone = () => {
         </div>
         <div className="testimonials-mobile" id="reviews-mobile">
 
-          {/* <div className="tagline-3">Subscribers about U-interviews</div>
+          <div className="tagline-3">Subscribers about U-interviews</div>
           <div className="title">
             <div className="overlap-group-3">
               <div className="rectangle-3" />
               <div className="tagline-4">Reviews</div>
             </div>
-          </div> */}
+          </div>
           {/* <div className="overlap-2">
             <div className="rectangle-4" />
             <img className="image" alt="Image" src="/img/image.png" />
@@ -143,7 +143,7 @@ export const Phone = () => {
               <div className="tagline-9">Values</div>
             </div>
           </div>
-          <Button className="button-5" href="#subscribe-mobile">
+          <Button className="button-5" href="#subscribe">
             Get Started
           </Button>
         </div>
@@ -182,7 +182,7 @@ export const Phone = () => {
               <div className="tagline-12">View All Categories</div>
             </div>
           </button> */}
-          <Button className="button-6 " href="#subscribe-mobile">
+          <Button className="button-6 " href="#subscribe">
             Get Started
           </Button>
         </div>
@@ -250,7 +250,7 @@ export const Phone = () => {
             <div className="tagline-16">entrepreneurial mindsets</div>
             <p className="tagline-17">Empathy-based learning of how to spend your lifetime doing business you enjoy</p>
             <div className="tagline-18">of the world</div>
-            <Button className="button-7 " href="#subscribe-mobile">
+            <Button className="button-7 " href="#subscribe">
               Get Started
             </Button>
           </div>
