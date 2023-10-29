@@ -69,7 +69,7 @@ const Testimonials = () => {
               <img className="vector-14" alt="Vector" src="/img/vector-20.png" />
             </div>
           </div>
-          <div className={`testimonial-contetnt ${animatoin}`}>
+          <div className={`testimonial-contetnt ${animatoin}`} onTouchMove={handleNext}>
             <img className="testimonial-photo" alt="Testimonial photo" src={testimonials[currentTestimonial].photo} />
             <div className="testimonial-details">
               <div className="testimonial-name">
