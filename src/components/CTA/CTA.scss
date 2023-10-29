@@ -1,3 +1,47 @@
+.subscription-result {
+  position: absolute;
+  top: 546px;
+  left: 224px;
+  border: solid 2px #777;
+  background: #f0f0f0;
+  border-radius: 26px;
+  width: 386px;
+  height: 117px;
+  max-width: 100%;
+  padding: 33px 26px 26px 23px;
+}
+.subscription-result-content {
+  display: flex;
+  width: 307px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .success-icon {
+    position: relative;
+    width: 49px;
+    height: 49px;
+  }
+  .subscription-result-text {
+    position: relative;
+    width: 258px;
+    margin-top: -1px;
+    font-family: "Gilroy-Semibold", Helvetica;
+    font-weight: 400;
+    color: #3e3e3c;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 28.8px;
+  }
+}
+
+.phone {
+  .subscription-result {
+    position: static;
+    margin: 45 auto 0;
+  }
+}
+
 .form {
   // default and for desktop
   .cta-categories {

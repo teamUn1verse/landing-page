@@ -8,6 +8,7 @@ import { collection, addDoc } from "firebase/firestore";
 function CTA() {
   const emailRef = useRef();
   const [selections, setSelections] = useState([]);
+  const [subscribed, setSubscribed] = useState(false);
 
   const handleCheckboxChange = (e) => {
     if (e.target.checked) {
@@ -40,12 +41,14 @@ function CTA() {
     try {
       const docRef = await addDoc(collection(db, "subscriptions-lp1"), data);
       console.log("Document written with ID: ", docRef.id);
-      alert("Subscription successful!");
+      // alert("Subscription successful!");
+      setSubscribed(true);
       emailRef.current.value = '';  // Clear email input
       setSelections([]);
     } catch (error) {
       console.error("Error adding document: ", error);
       alert("Subscription failed. Please try again.");
+      setSubscribed(false);
     }
   };
 
@@ -104,9 +107,19 @@ function CTA() {
             </label>
           </div>
         </div>
-        <button className={`btn submit-button`} type='submit'>
-          <div className="btn__text">Subscribe</div>
-        </button>
+        {subscribed? (
+          <div class="subscription-result">
+            <div className="subscription-result-content">
+              <img class="success-icon" src="img/success-icon.svg" />
+              <div class="subscription-result-text">Subscription is successful</div>
+            </div>
+          </div>
+        ) : (
+          <button className={`btn submit-button`} type='submit'>
+            <div className="btn__text">Subscribe</div>
+          </button>
+        )}
+        
       </div>
     </form>
   );
