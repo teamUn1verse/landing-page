@@ -35,66 +35,67 @@ const Testimonials = () => {
   ];
 
   const handleNext = () => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+    setAnimatoin("fade-out"); // Start by fading out
+    const timer = setTimeout(() => {
+      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+      setAnimatoin("slide-up");  // Then fade in
+    }, 100);  // short delay to ensure fade-out happens first
+    return () => clearTimeout(timer);
   };
 
   const handlePrev = () => {
-    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setAnimatoin("fade-out"); // Start by fading out
+    const timer = setTimeout(() => {
+      setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+      setAnimatoin("slide-down");  // Then fade in
+    }, 100);  // short delay to ensure fade-out happens first
+    return () => clearTimeout(timer);
   };
 
   // Code for handling fadeIn effect:
-  const [fadeIn, setFadeIn] = useState(false);
-
- // Code for handling fadeIn effect:
-useEffect(() => {
-  setFadeIn(false); // Start by fading out
-  const timer = setTimeout(() => {
-    setFadeIn(true);  // Then fade in
-  }, 100);  // short delay to ensure fade-out happens first
-  return () => clearTimeout(timer);
-}, [currentTestimonial]);
-
-
+  const [animatoin, setAnimatoin] = useState("");
 
   return (
-    
-    <div className="overlap-7">
-      <div className="rectangle" />
-      <div className="arrow-right" onClick={handleNext}>
-        <div className="overlap-8">
-          <img className="vector-13" alt="Vector" src="/img/vector-20-1.png" />
-        </div>
-      </div>
-      <div className="arrow-left" onClick={handlePrev}>
-        <div className="overlap-8">
-          <img className="vector-14" alt="Vector" src="/img/vector-20.png" />
-        </div>
-      </div>
-      <div className={`testimonial-contetnt ${fadeIn ? 'fade-in' : 'fade-out'}`}>
-        <img className="testimonial-photo" alt="Testimonial photo" src={testimonials[currentTestimonial].photo} />
-        <div className="testimonial-details">
-          <div className="testimonial-name">
-            <div className="text-wrapper-9">{testimonials[currentTestimonial].name}</div>
+    <>
+      <div className="overlap-7">
+        <div className="testimonial-rectangle" >
+          <div className="slide-right" onClick={handleNext}>
+            <div className="overlap-8">
+              <img className="vector-13" alt="Vector" src="/img/vector-20-1.png" />
+            </div>
           </div>
-          <div className="testimonial-position">
-            <div className="text-wrapper-10">{testimonials[currentTestimonial].position}</div>
+          <div className="slide-left" onClick={handlePrev}>
+            <div className="overlap-8">
+              <img className="vector-14" alt="Vector" src="/img/vector-20.png" />
+            </div>
           </div>
-          <div className="testimonial-text">
-            <p className="text-wrapper-11">{testimonials[currentTestimonial].text}</p>
+          <div className={`testimonial-contetnt ${animatoin}`}>
+            <img className="testimonial-photo" alt="Testimonial photo" src={testimonials[currentTestimonial].photo} />
+            <div className="testimonial-details">
+              <div className="testimonial-name">
+                <div>{testimonials[currentTestimonial].name}</div>
+              </div>
+              <div className="testimonial-position">
+                <div>{testimonials[currentTestimonial].position}</div>
+              </div>
+              <div className="testimonial-text">
+                <p>{testimonials[currentTestimonial].text}</p>
+              </div>
+            </div>
           </div>
-        </div>
+            <img className="quote quote-left" alt="Quote" src="/img/quote.png" />
+            <img className="quote quote-right" alt="Quote" src="/img/quote.png" />
+          </div>
       </div>
-      <img className="quote" alt="Quote" src="/img/quote-1.png" />
-      <img className="quote-2" alt="Quote" src="/img/quote.png" />
       <div className="dots">
         {testimonials.map((_, index) => (
           <div 
             key={index}
-            className={index === currentTestimonial ? "ellipse-active" : "ellipse"} 
+            className={index === currentTestimonial ? "dot-active dot" : "dot"} 
           />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

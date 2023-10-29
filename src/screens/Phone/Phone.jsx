@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import { MobileMenu } from "../../components/MobileMenu/MobileMenu";
 import CTA from "../../components/CTA/CTA";
+import Testimonials from "../../components/Testimonial/Testimonial";
 
 export const Phone = () => {
   const [mobileMenuState, setMobileMenuState] = useState(false);
@@ -42,14 +43,15 @@ export const Phone = () => {
         <img className="man" alt="Man" src="/img/man.png" />
         </div>
         <div className="testimonials-mobile" id="reviews-mobile">
-          <div className="tagline-3">Subscribers about U-interviews</div>
+
+          {/* <div className="tagline-3">Subscribers about U-interviews</div>
           <div className="title">
             <div className="overlap-group-3">
               <div className="rectangle-3" />
               <div className="tagline-4">Reviews</div>
             </div>
-          </div>
-          <div className="overlap-2">
+          </div> */}
+          {/* <div className="overlap-2">
             <div className="rectangle-4" />
             <img className="image" alt="Image" src="/img/image.png" />
             <div className="slide-right">
@@ -72,7 +74,8 @@ export const Phone = () => {
             </p>
             <img className="group-7" alt="Group" src="/img/group-76.png" />
             <img className="group-8" alt="Group" src="/img/group-75.png" />
-          </div>
+          </div> */}
+          <Testimonials/>
         </div>
         <div className="categories-mobile" id="categories-mobile">
           <button className="button">
@@ -112,9 +115,7 @@ export const Phone = () => {
               <div className="tagline-7">Get Started</div>
             </div>
           </button> */}
-          <Button className="button-5 " href="#subscribe-mobile">
-            Get Started
-          </Button>
+          
           <p className="text-wrapper-7">
             Sharing achievements between business researchers and entrepreneurs
           </p>
@@ -127,7 +128,7 @@ export const Phone = () => {
           <div className="item-hedonic-mobile">
             <img className="STEPS" alt="Steps" src="/img/steps-1.png" />
           </div>
-          <p className="text-wrapper-11">Creating a future by taking action</p>
+          <p className="text-wrapper-11-future">Creating a future by taking action</p>
           <div className="text-wrapper-12">Effectuation</div>
           <img className="item-effect-mobile" alt="Item effect mobile" src="/img/item-effect-mobile.png" />
           <div className="item-hq-mobile">
@@ -142,6 +143,9 @@ export const Phone = () => {
               <div className="tagline-9">Values</div>
             </div>
           </div>
+          <Button className="button-5" href="#subscribe-mobile">
+            Get Started
+          </Button>
         </div>
         <div className="value-section-mobile" id="value-for-u">
           <div className="title-3">

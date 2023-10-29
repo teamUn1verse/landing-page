@@ -457,45 +457,6 @@
   width: 126px;
 }
 
-.phone .overlap-2 {
-  height: 771px;
-  left: 0;
-  position: absolute;
-  top: 238px;
-  width: 375px;
-}
-
-.phone .rectangle-4 {
-  background-color: #ffffff;
-  border: 2px solid;
-  border-color: #f6c943;
-  border-radius: 26px;
-  height: 709px;
-  left: 23px;
-  position: absolute;
-  top: 36px;
-  width: 328px;
-}
-
-.phone .image {
-  height: 133px;
-  left: 121px;
-  position: absolute;
-  top: 86px;
-  width: 133px;
-}
-
-.phone .slide-right {
-  background-color: var(--whitebg);
-  border-radius: 40px;
-  height: 80px;
-  left: 295px;
-  position: absolute;
-  top: 113px;
-  transform: rotate(180deg);
-  width: 80px;
-}
-
 .phone .vector-wrapper {
   background-color: #f8645e;
   border-radius: 33.22px;
@@ -514,16 +475,6 @@
   top: 20px;
   transform: rotate(-180deg);
   width: 16px;
-}
-
-.phone .slide-left {
-  background-color: var(--whitebg);
-  border-radius: 40px;
-  height: 80px;
-  left: 0;
-  position: absolute;
-  top: 113px;
-  width: 80px;
 }
 
 .phone .img-wrapper {
@@ -803,7 +754,7 @@
   top: 1444px;
   width: 176px;
   border: none;
-  background: transparent;
+  /* background: transparent; */
 }
 
 .phone .tagline-7 {
@@ -910,7 +861,7 @@
   width: 73px;
 }
 
-.phone .text-wrapper-11 {
+.phone .text-wrapper-11-future {
   color: #3e3e3c;
   font-family: "Gilroy-Medium", Helvetica;
   font-size: 18px;
