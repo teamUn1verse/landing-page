@@ -34,7 +34,7 @@
   color: var(--variable-collection-darkgray);
   font-family: "Gilroy-Regular", Helvetica;
   font-size: 16px;
-  font-weight: 400;
+  /* font-weight: 400; */
   height: 10px;
   left: 0;
   letter-spacing: 0;
@@ -75,7 +75,7 @@
   color: #292929;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 24px;
-  font-weight: 400;
+  /* font-weight: 400; */
   left: 69px;
   letter-spacing: 0;
   line-height: normal;
@@ -87,7 +87,7 @@
   color: var(--variable-collection-darkgray);
   font-family: "Gilroy-Regular", Helvetica;
   font-size: 16px;
-  font-weight: 400;
+  /* font-weight: 400; */
   height: 10px;
   left: 128px;
   letter-spacing: 0;
@@ -154,7 +154,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 42px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 1px;
   letter-spacing: 0;
   line-height: 69.7px;
@@ -193,7 +193,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 24px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 6px;
   letter-spacing: 0;
   line-height: 28.8px;
@@ -228,7 +228,7 @@
   color: #ffffff;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   height: 18px;
   letter-spacing: 0;
   line-height: 24px;
@@ -274,7 +274,7 @@
   color: #3e3e3c;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 20px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 34px;
   letter-spacing: 0;
   line-height: 33.2px;
@@ -327,7 +327,7 @@
   color: #acacac;
   font-family: "Gilroy-Medium", Helvetica;
   font-size: 18px;
-  font-weight: 500;
+  /* font-weight: 500; */
   left: 2px;
   letter-spacing: 0;
   line-height: 29.9px;
@@ -349,7 +349,7 @@
   color: #3e3e3c;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 20px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 33px;
   letter-spacing: 0;
   line-height: 33.2px;
@@ -382,7 +382,7 @@
   color: #acacac;
   font-family: "Gilroy-Medium", Helvetica;
   font-size: 18px;
-  font-weight: 500;
+  /* font-weight: 500; */
   height: 30px;
   left: 49px;
   letter-spacing: 0;
@@ -407,7 +407,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 42px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 3px;
   letter-spacing: 0;
   line-height: 69.7px;
@@ -446,7 +446,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 24px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 11px;
   letter-spacing: 0;
   line-height: 28.8px;
@@ -500,7 +500,7 @@
   color: #3e3e3c;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 24px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 125px;
   letter-spacing: 0;
   line-height: 39.8px;
@@ -513,7 +513,7 @@
   color: #7c7c7c;
   font-family: "Gilroy-Regular", Helvetica;
   font-size: 16px;
-  font-weight: 400;
+  /* font-weight: 400; */
   left: 64px;
   letter-spacing: 0;
   line-height: 26.6px;
@@ -526,7 +526,7 @@
   color: #3e3e3c;
   font-family: "Gilroy-Medium", Helvetica;
   font-size: 18px;
-  font-weight: 500;
+  /* font-weight: 500; */
   left: 64px;
   letter-spacing: 0;
   line-height: 29.9px;
@@ -591,7 +591,7 @@
   color: #ffffff;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   height: 16px;
   letter-spacing: 0;
   line-height: 24px;
@@ -605,7 +605,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 42px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 43px;
   letter-spacing: 0;
   line-height: 69.7px;
@@ -644,7 +644,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 24px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 25px;
   letter-spacing: 0;
   line-height: 28.8px;
@@ -670,7 +670,7 @@
   color: #ffffff;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   height: 17px;
   letter-spacing: 0;
   line-height: 24px;
@@ -695,7 +695,7 @@
   color: #ffffff;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   height: 17px;
   letter-spacing: 0;
   line-height: 24px;
@@ -720,7 +720,7 @@
   color: #ffffff;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   height: 17px;
   letter-spacing: 0;
   line-height: 24px;
@@ -761,7 +761,7 @@
   color: #ffffff;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   height: 16px;
   letter-spacing: 0;
   line-height: 24px;
@@ -775,7 +775,7 @@
   color: #3e3e3c;
   font-family: "Gilroy-Medium", Helvetica;
   font-size: 18px;
-  font-weight: 500;
+  /* font-weight: 500; */
   left: 0;
   letter-spacing: 0;
   line-height: 29.9px;
@@ -789,7 +789,7 @@
   color: #292929;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   left: 82px;
   letter-spacing: 0;
   line-height: 30.2px;
@@ -820,7 +820,7 @@
   color: #3e3e3c;
   font-family: "Gilroy-Medium", Helvetica;
   font-size: 18px;
-  font-weight: 500;
+  /* font-weight: 500; */
   left: 17px;
   letter-spacing: 0;
   line-height: 29.9px;
@@ -834,7 +834,7 @@
   color: #292929;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   left: 34px;
   letter-spacing: 0;
   line-height: 30.2px;
@@ -865,7 +865,7 @@
   color: #3e3e3c;
   font-family: "Gilroy-Medium", Helvetica;
   font-size: 18px;
-  font-weight: 500;
+  /* font-weight: 500; */
   left: 17px;
   letter-spacing: 0;
   line-height: 29.9px;
@@ -879,7 +879,7 @@
   color: #292929;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   left: 63px;
   letter-spacing: 0;
   line-height: 30.2px;
@@ -916,7 +916,7 @@
   color: #292929;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   left: 47px;
   letter-spacing: 0;
   line-height: 30.2px;
@@ -929,7 +929,7 @@
   color: #3e3e3c;
   font-family: "Gilroy-Medium", Helvetica;
   font-size: 18px;
-  font-weight: 500;
+  /* font-weight: 500; */
   left: 0;
   letter-spacing: 0;
   line-height: 29.9px;
@@ -943,7 +943,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 42px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 28px;
   letter-spacing: 0;
   line-height: 69.7px;
@@ -981,7 +981,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 24px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 20px;
   letter-spacing: 0;
   line-height: 28.8px;
@@ -1029,7 +1029,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 24px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 25px;
   letter-spacing: 0;
   line-height: 28.8px;
@@ -1044,7 +1044,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 42px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 77px;
   letter-spacing: 0;
   line-height: 69.7px;
@@ -1083,7 +1083,7 @@
   color: #292929;
   font-family: "Gilroy-Medium", Helvetica;
   font-size: 14px;
-  font-weight: 500;
+  /* font-weight: 500; */
   left: 60px;
   letter-spacing: 0;
   line-height: normal;
@@ -1097,7 +1097,7 @@
   color: #3e3e3c;
   font-family: "Gilroy-Medium", Helvetica;
   font-size: 18px;
-  font-weight: 500;
+  /* font-weight: 500; */
   left: 38px;
   letter-spacing: 0;
   line-height: 27.4px;
@@ -1108,9 +1108,9 @@
 
 .phone .text-wrapper-17 {
   color: #909093;
-  font-family: "Rubik", Helvetica;
+  font-family: "Gilroy-Medium", Helvetica;
   font-size: 14px;
-  font-weight: 400;
+  /* font-weight: 400; */
   left: 279px;
   letter-spacing: 0;
   line-height: 22.4px;
@@ -1148,7 +1148,7 @@
   color: #292929;
   font-family: "Gilroy-Medium", Helvetica;
   font-size: 14px;
-  font-weight: 500;
+  /* font-weight: 500; */
   left: 60px;
   letter-spacing: 0;
   line-height: normal;
@@ -1179,7 +1179,7 @@
   color: #ffffff;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   left: 38px;
   letter-spacing: 0;
   line-height: 24px;
@@ -1201,7 +1201,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 32px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 0;
   letter-spacing: 0;
   line-height: 53.1px;
@@ -1223,7 +1223,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 24px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 12px;
   letter-spacing: 0;
   line-height: 28.8px;
@@ -1266,7 +1266,7 @@
   color: #292929;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   left: 0;
   letter-spacing: 0;
   line-height: 24px;
@@ -1304,7 +1304,7 @@
   color: #292929;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   left: 0;
   letter-spacing: 0;
   line-height: 24px;
@@ -1346,7 +1346,7 @@
   color: #292929;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   left: 0;
   letter-spacing: 0;
   line-height: 24px;
@@ -1388,7 +1388,7 @@
   color: #292929;
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  /* font-weight: 400; */
   left: 0;
   letter-spacing: 0;
   line-height: 24px;
@@ -1473,7 +1473,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 44px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 117px;
   letter-spacing: 0;
   line-height: 52.8px;
@@ -1486,7 +1486,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 44px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 15px;
   letter-spacing: 0;
   line-height: 52.8px;
@@ -1501,7 +1501,7 @@
   color: var(--grey-scaleblack-50);
   font-family: "Gilroy-Medium", Helvetica;
   font-size: 20px;
-  font-weight: 500;
+  /* font-weight: 500; */
   left: 41px;
   letter-spacing: 0;
   line-height: 32px;
@@ -1515,7 +1515,7 @@
   color: #292929;
   font-family: "Gilroy-Bold", Helvetica;
   font-size: 44px;
-  font-weight: 700;
+  /* font-weight: 700; */
   left: 64px;
   letter-spacing: 0;
   line-height: 52.8px;
@@ -1544,7 +1544,7 @@
 /* .phone .tagline-19 {
   font-family: "Gilroy-Semibold", Helvetica;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 400; 
   left: 71px;
   top: 26px;
   letter-spacing: 0;

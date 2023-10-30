@@ -71,7 +71,7 @@ const Testimonials = () => {
           </div>
           <div className={`testimonial-contetnt ${animatoin}`} onTouchMove={handleNext}>
             <picture className="testimonial-photo">
-              <source type="image/webp" srcset={testimonials[currentTestimonial].photo + ".webp"} />
+              <source type="image/webp" srcSet={testimonials[currentTestimonial].photo + ".webp"} />
               <img alt="Testimonial photo" src={testimonials[currentTestimonial].photo + ".png"} />
             </picture>
             <div className="testimonial-details">
