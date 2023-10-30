@@ -42,7 +42,7 @@ export const Desktop = () => {
 
   return (
     <div className="desktop">
-      <div className="div">
+      <div className="main-container">
         <div className="overlap">
           <div className="ellipse" />
           <div className="what-section" id="about-us">
@@ -499,32 +499,34 @@ export const Desktop = () => {
             </Button>
           </div>
         </div>
-        <div className="navbar">
-          <a href="#about-us" className="menu-item">
-            About Us
-          </a>
-          <a href="#reviews" className="menu-item">
-            Reviews
-          </a>
-          <a href="#podcast" className="menu-item">
-            Podcast
-          </a>
-          <a href="#categories" className="menu-item">
-            Categories
-          </a>
-          <a href="#contact" className="menu-item">
-            Contact
-          </a>
-        </div>
-        <div className="image-wrapper">
-          <div className="div-wrapper">
-            <div className="group-8">
-              <img
-                className="logo-image"
-                alt="Logo image"
-                src="/img/logo-image.png"
-              />
-              <div className="text-wrapper-6">U-Universe</div>
+        <div className="header-desktop">
+          <div className="navbar">
+            <a href="#about-us" className="menu-item">
+              About Us
+            </a>
+            <a href="#reviews" className="menu-item">
+              Reviews
+            </a>
+            <a href="#podcast" className="menu-item">
+              Podcast
+            </a>
+            <a href="#categories" className="menu-item">
+              Categories
+            </a>
+            <a href="#contact" className="menu-item">
+              Contact
+            </a>
+          </div>
+          <div className="image-wrapper">
+            <div className="div-wrapper">
+              <div className="group-8">
+                <img
+                  className="logo-image"
+                  alt="Logo image"
+                  src="/img/logo-image.png"
+                />
+                <div className="text-wrapper-6">U-Universe</div>
+              </div>
             </div>
           </div>
         </div>

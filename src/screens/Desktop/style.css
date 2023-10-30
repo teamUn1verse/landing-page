@@ -10,16 +10,23 @@ html {
   width: 100%;
 }
 
-.desktop .div {
+.desktop .main-container {
   background-color: #ffffff;
   height: 6022px;
   position: relative;
-  width: 1920px;
+  width: 1170px;
+  margin: 0 auto;
+}
+.desktop .main-container > *{
+  /* Override positions of major sections */
+  left: 0 !important;
 }
 
 .desktop .overlap {
   height: 578px;
+  /* ovverided with 0 */
   left: 310px;
+  margin-left: -65px;
   position: absolute;
   top: 799px;
   width: 1264px;
@@ -562,7 +569,9 @@ html {
 
 .desktop .subscribe-section {
   height: 747px;
+  /* overrided with 0 */
   left: 211px;
+  margin-left: -164px;
   position: absolute;
   top: 4977px;
   width: 1521px;
@@ -801,7 +810,9 @@ html {
 
 .desktop .reviews-section {
   height: 626px;
+  /*overrided with 0*/
   left: 362px;
+  margin-left: -13px;
   position: absolute;
   top: 4190px;
   width: 1233px;
@@ -1349,7 +1360,7 @@ html {
 
 .desktop .podcast {
   height: 760px;
-  left: 375px;
+  left: 0;
   position: absolute;
   top: 2100px;
   width: 1141px;
@@ -1549,7 +1560,7 @@ html {
 
 .desktop .value-for-u-section {
   height: 402px;
-  left: 375px;
+  left: 0;
   position: absolute;
   top: 1537px;
   width: 1179px;
@@ -1748,7 +1759,7 @@ html {
 
 .desktop .starting-section {
   height: 471px;
-  left: 375px;
+  left: 0;
   position: absolute;
   top: 188px;
   width: 1178px;
@@ -1875,13 +1886,13 @@ html {
   display: inline-flex;
   gap: 70px;
   justify-content: flex-end;
-  left: 934px;
+  left: 568px;
   position: absolute;
   top: 70px;
 }
 .desktop .image-wrapper {
   height: 53px;
-  left: 375px;
+  left: 0;
   position: absolute;
   top: 51px;
   width: 191px;
