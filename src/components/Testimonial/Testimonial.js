@@ -11,25 +11,25 @@ const Testimonials = () => {
       name: "Irene Buller",
       position: "Senior Consultant, EY, Switzerland",
       text: "I’ve seen so many interviews with entrepreneurs, including on educational platforms, but this is the first time I’ve seen this exact effectuation approach. I work in a research environment and I see that the use of research findings in interviews adds a special character and makes them truly engaging and really useful.",
-      photo: "/img/testimonial-photo.png"
+      photo: "/img/testimonial-photo" //no file extension here. Asuming both webp abd png!
     },
     {
       name: "Bojan Pantic",
       position: "Business Analyst, Serbia",
       text: "I have a background in academic research and applied research in business but this is the first time I see research insights in an interview format. I love it!",
-      photo: "/img/testimonial-photo2.png"
+      photo: "/img/testimonial-photo2" //no file extension here. Asuming both webp abd png!
     },
     {
       name: "Janne Ruponen",
       position: "Entrepreneur, Finland",
       text: "I've listened to a lot of podcasts with entrepreneurs, and the majority of the interviews clearly lack real-life situations. listening to the u-universes interviews, I get answers not only to practical questions like How did you achieve this? but also to questions like Why? It reminds me the case study where I see the whole picture and all the connections.",
-      photo: "/img/testimonial-photo3.png"
+      photo: "/img/testimonial-photo3" //no file extension here. Asuming both webp abd png!
     },
     {
       name: "Anton Fedosin",
       position: "CEO, Zenmoney, Israel",
       text: "I found it useful to study international experience in an entrepreneurial environment through the interview on the platform. It helped me with my business project a lot.",
-      photo: "/img/testimonial-photo4.png"
+      photo: "/img/testimonial-photo4" //no file extension here. Asuming both webp abd png!
     },
     // ... add more testimonials
   ];
@@ -70,7 +70,10 @@ const Testimonials = () => {
             </div>
           </div>
           <div className={`testimonial-contetnt ${animatoin}`} onTouchMove={handleNext}>
-            <img className="testimonial-photo" alt="Testimonial photo" src={testimonials[currentTestimonial].photo} />
+            <picture className="testimonial-photo">
+              <source type="image/webp" srcset={testimonials[currentTestimonial].photo + ".webp"} />
+              <img alt="Testimonial photo" src={testimonials[currentTestimonial].photo + ".png"} />
+            </picture>
             <div className="testimonial-details">
               <div className="testimonial-name">
                 <div>{testimonials[currentTestimonial].name}</div>

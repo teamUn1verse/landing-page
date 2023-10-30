@@ -9,6 +9,10 @@
   border-color: #f6c943;
   border-radius: 26px;
 }
+.testimonial-photo > img{
+  width: inherit;
+  height: inherit;
+}
 .testimonial-details {
   color: #3e3e3c;
   .testimonial-name {
