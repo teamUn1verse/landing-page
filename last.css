@@ -1,0 +1,22 @@
+@media screen and (max-width: 1169px){
+    .desktop {
+      display: none;
+    }
+    #subscribe{
+      position: absolute;
+      top: 8252px;
+      width: 100%;
+      height: 2px;
+    }
+  }
+  @media screen and (min-width: 1170px) {
+    .phone {
+      display: none;
+    }
+    #subscribe{
+      position: absolute;
+      top: 4977px;
+      width: 100%;
+      height: 2px;
+    }
+  }

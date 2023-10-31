@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css";
 import { useState } from "react";
 import Button from "../../components/Button/Button";
@@ -6,7 +6,20 @@ import Testimonial from "../../components/Testimonial/Testimonial";
 import Modal from "../../components/Modal/Modal";
 import CTA from "../../components/CTA/CTA";
 
+
 export const Desktop = () => {
+
+  useEffect(()=>{
+    // dirty fix for iphone (wtf?)
+    var uagent = navigator.userAgent.toLowerCase();
+    if (uagent.search("iphone") > -1){
+      document.getElementsByClassName("phone")[0].style.display="block";
+      document.getElementsByClassName("desktop")[0].style.display="none";
+    } else {
+      console.log(uagent);
+    }
+  },[])
+  
   const handleSubmit = () => {
     alert("rock-n-roll here Janne");
   };

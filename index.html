@@ -13,7 +13,7 @@
     <title>U-Universe: meet empathic in-depth interviews with  entrepreneurs.</title>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <style>
-      /* @import url("https://fonts.googleapis.com/css?family=Rubik:400"); */
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
       @font-face {
         font-family: "Gilroy-Bold";
         font-display: swap;
@@ -41,11 +41,8 @@
         src: url("https://anima-uploads.s3.amazonaws.com/projects/635131b13f27792e46569104/fonts/gilroy-medium.ttf")
           format("truetype");
       }
-    </style>
-    <style>
-      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+      
       * {
-        -webkit-font-smoothing: antialiased;
         box-sizing: border-box;
       }
       html,
@@ -56,15 +53,14 @@
       /* a blue color as a generic focus style */
       button:focus-visible {
         outline: 2px solid #4a90e2 !important;
-        outline: -webkit-focus-ring-color auto 5px !important;
+        /* outline: -webkit-focus-ring-color auto 5px !important; */
       }
       a {
         text-decoration: none;
       }
-      @media screen and (max-width: 1169px),
-      screen and (max-device-width: 1169px) {
+      @media screen and (max-width: 1169px){
         .desktop {
-          display: none !important;
+          display: none;
         }
         #subscribe{
           position: absolute;
@@ -73,10 +69,9 @@
           height: 2px;
         }
       }
-      @media screen and (min-width: 1170px),
-      screen and (min-device-width: 1170px) {
+      @media screen and (min-width: 1170px) {
         .phone {
-          display: none !important;
+          display: none;
         }
         #subscribe{
           position: absolute;
@@ -96,6 +91,7 @@
 
       gtag('config', 'G-H3L1V2G459');
     </script>
+    <link rel="stylesheet" href="./last.css">
   </head>
   <body>
     <div id="app"></div>
