@@ -38,6 +38,11 @@ function CTA() {
       serEnt: selections.includes("Serial entrepreneurs"),
     };
 
+    if (!selections.length) {
+      alert("Please choose at least one category");
+      return;
+    }
+
     try {
       const docRef = await addDoc(collection(db, "subscriptions-lp1"), data);
       console.log("Document written with ID: ", docRef.id);
