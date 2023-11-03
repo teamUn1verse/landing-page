@@ -25,8 +25,8 @@
     position: relative;
     width: 258px;
     margin-top: -1px;
-    font-family: "Gilroy-Semibold", Helvetica;
-    font-weight: 400;
+    font-family: "Gilroy-Bold", Helvetica;
+    // font-weight: 400;
     color: #3e3e3c;
     font-size: 24px;
     text-align: center;
@@ -78,7 +78,7 @@
     padding: 65px 8px 37px;
     .form-title {
       font-family: "Gilroy-Bold", Helvetica;
-      font-weight: 700;
+      // font-weight: 700;
       color: #292929;
       font-size: 42px;
       text-align: center;
@@ -86,16 +86,16 @@
     }
     .cta-label {
       font-family: "Gilroy-Medium", Helvetica;
-      font-weight: 500;
+      // font-weight: 500;
       color: #acacac;
       font-size: 18px;
       letter-spacing: 0;
       width: 100%;
-      margin: 35px 17px 20px;
+      margin: 35px 6px 20px;
     }
     .cta-categories {
       flex-direction: column;
-      margin: 0 24px;
+      margin: 0 6px;
       .radio-input {
         font-weight: 700;
         color: #3e3e3c;
@@ -103,7 +103,6 @@
         letter-spacing: 0;
         height: 33.2px;
         margin-bottom: 12px;
-        white-space: nowrap;
       }
     }
   }

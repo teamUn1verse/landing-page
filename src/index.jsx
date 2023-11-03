@@ -7,8 +7,8 @@ const app = document.getElementById("app");
 const root = ReactDOMClient.createRoot(app);
 root.render(
   <>
-    <Desktop />
     <Phone />
+    <Desktop />
     <div id="subscribe" className="subscribe-anchor"></div>
   </>
 );
