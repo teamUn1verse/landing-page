@@ -150,7 +150,7 @@ export const Desktop = () => {
           <p className="copyrights">© U-universe. All Rights Reserved.</p>
           <a
             className="privacy"
-            href="#"
+            href="/pdf/privacy-policy.pdf?v1-11-23"
             rel="noopener noreferrer"
             target="_blank"
           >
@@ -428,7 +428,7 @@ export const Desktop = () => {
           <img
             className="podcast-image"
             alt="Podcast image"
-            src="/img/podcast-image.png"
+            src="/img/podcast-image.svg"
           />
           <p className="podcast-description">
             Every day thousands of business research interviews shape the

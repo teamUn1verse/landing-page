@@ -23,7 +23,7 @@ export const Phone = () => {
           </div>
           <a
             className="copyrights-2"
-            href="#"
+            href="/pdf/privacy-policy.pdf?v1-11-23"
             rel="noopener noreferrer"
             target="_blank"
           >
