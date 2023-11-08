@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import "./CTA.scss"; 
 import Input from "../../components/Input/Input";
 import db from "../../firebase";
-import { collection, addDoc } from "firebase/firestore"; 
+import { collection, addDoc, serverTimestamp } from "firebase/firestore"; 
 
 
 function CTA() {
@@ -36,6 +36,7 @@ function CTA() {
       entEff: selections.includes("Entrepreneurs effectuators"),
       entRes: selections.includes("Entrepreneurship researchers"),
       serEnt: selections.includes("Serial entrepreneurs"),
+      timestamp: serverTimestamp(),
     };
 
     if (!selections.length) {
