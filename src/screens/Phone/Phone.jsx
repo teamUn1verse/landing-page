@@ -110,37 +110,49 @@ export const Phone = () => {
           <img className="long-hair-girl" alt="Long hair girl" src="/img/long-hair-girl.png" />
         </div>
         <div className="u-values-section">
-          {/* <button className="button-5">
-            <div className="frame-2">
-              <div className="tagline-7">Get Started</div>
+        <div className="tagline-8">U-values</div>
+        <div className="tag">
+          <div className="overlap-group-5">
+            <div className="rectangle-6" />
+            <div className="tagline-9">Values</div>
+          </div>
+        </div>
+        <div className="values-list" style={{"display":"block"}}>
+            <div className="item">
+              <div className="icon-list-content">
+                <h3 className="icon-list-title">Eudaimonic vs Hedonic Well-Being </h3>
+                <p className="icon-list-text">Engaging learning for personal growth</p>
+              </div>
+              <div className="icon-wrapper" style={{"padding":"5px"}}>
+                <img alt="icon" src="/img/icons/mental-well-being.svg" width="110px"/>
+              </div>
             </div>
-          </button> */}
-          
-          <p className="text-wrapper-7">
-            Sharing achievements between business researchers and entrepreneurs
-          </p>
-          <div className="text-wrapper-8">Research</div>
-          <div className="item-research-mobile">
-            <img className="icon-zoom-mobile" alt="Icon zoom mobile" src="/img/icon-zoom-mobile.png" />
-          </div>
-          <p className="text-wrapper-9">Engaging learning for personal growth</p>
-          <div className="text-wrapper-10">Hedonic motivation</div>
-          <div className="item-hedonic-mobile">
-            <img className="STEPS" alt="Steps" src="/img/steps-1.png" />
-          </div>
-          <p className="text-wrapper-11-future">Creating a future by taking action</p>
-          <div className="text-wrapper-12">Effectuation</div>
-          <img className="item-effect-mobile" alt="Item effect mobile" src="/img/item-effect-mobile.png" />
-          <div className="item-hq-mobile">
-            <img className="img-hq-mobile" alt="Img hq mobile" src="/img/img-hq-mobile.png" />
-            <div className="text-wrapper-13">High-quality</div>
-            <div className="text-wrapper-14">Educating with entrepreneurs interviews</div>
-          </div>
-          <div className="tagline-8">U-values</div>
-          <div className="tag">
-            <div className="overlap-group-5">
-              <div className="rectangle-6" />
-              <div className="tagline-9">Values</div>
+            <div className="item">
+              <div className="icon-list-content">
+                <h3 className="icon-list-title">Empathy vs Egocentrism</h3>
+                <p className="icon-list-text">Educating with entrepreneurs in-depth interviews</p>
+              </div>
+              <div className="icon-wrapper">
+                <img alt="icon" src="/img/icons/empathy.svg" width="83px"/>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon-list-content">
+                <h3 className="icon-list-title">Effectuation vs Causation</h3>
+                <p className="icon-list-text">Creating future by taking action</p>
+              </div>
+              <div className="icon-wrapper">
+                <img alt="icon" src="/img/icons/action.svg" width="83px"/>
+              </div>
+            </div>
+            <div className="item">
+              <div className="icon-list-content">
+                <h3 className="icon-list-title">Entrepreneurship Research vs No-theory Education</h3>
+                <p className="icon-list-text">Sharing achievements between researchers and entrepreneurs</p>
+              </div>
+              <div className="icon-wrapper">
+                <img alt="Search" src="/img/search-1.png" width="83px"/>
+              </div>
             </div>
           </div>
           <Button className="button-5" href="#subscribe">
@@ -188,8 +200,7 @@ export const Phone = () => {
         </div>
         <div className="what-section-mobile" id="about-us-mobile">
           <p className="tagline-13">
-            are empathic
-            <br /> in-depth interviews with&nbsp;&nbsp;entrepreneurs
+            are in-depth interviews with&nbsp;entrepreneurs
           </p>
           <div className="title-4">
             <div className="overlap-group-6">
@@ -206,7 +217,7 @@ export const Phone = () => {
               />
             </div>
             <p className="text-wrapper-19">
-              Focus on effectuators - entrepreneurs who believe that opportunities are made by yourself, not found
+              Focus on effectuators - entrepreneurs who believe that opportunities are created by you, not found
             </p>
           </div>
           <div className="element-2">
