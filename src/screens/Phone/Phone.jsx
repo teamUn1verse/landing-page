@@ -3,9 +3,11 @@ import "./style.css";
 import { MobileMenu } from "../../components/MobileMenu/MobileMenu";
 import CTA from "../../components/CTA/CTA";
 import Testimonials from "../../components/Testimonial/Testimonial";
+import Modal from "../../components/Modal/Modal";
 
 export const Phone = () => {
   const [mobileMenuState, setMobileMenuState] = useState(false);
+  const [activeModal, setActiveModal] = useState(null);
     return (
     <div className="phone">
       <div className="div">
@@ -51,40 +53,9 @@ export const Phone = () => {
               <div className="tagline-4">Reviews</div>
             </div>
           </div>
-          {/* <div className="overlap-2">
-            <div className="rectangle-4" />
-            <img className="image" alt="Image" src="/img/image.png" />
-            <div className="slide-right">
-              <div className="vector-wrapper">
-                <img className="vector" alt="Vector" src="/img/vector-20-1.png" />
-              </div>
-            </div>
-            <div className="slide-left">
-              <div className="img-wrapper">
-                <img className="img" alt="Vector" src="/img/vector-20.png" />
-              </div>
-            </div>
-            <div className="text-wrapper-5">Irene Buller</div>
-            <div className="text-wrapper-6">Senior Consultant, EY, Switzerland</div>
-            <p className="p">
-              I’ve seen so many interviews with entrepreneurs, including on educational platforms, but this is the first
-              time I’ve seen this exact effectuation approach. I work in a research environment and I see that the use
-              of research findings in interviews adds a special character and makes them truly engaging and really
-              useful.
-            </p>
-            <img className="group-7" alt="Group" src="/img/group-76.png" />
-            <img className="group-8" alt="Group" src="/img/group-75.png" />
-          </div> */}
           <Testimonials/>
         </div>
         <div className="categories-mobile" id="categories-mobile">
-          <button className="button">
-            <div className="div-wrapper">
-              <div className="frame-2">
-                <div className="as">Entrepreneurs Effectuators</div>
-              </div>
-            </div>
-          </button>
           <div className="tagline-5">U-interview categories</div>
           <div className="title-2">
             <div className="overlap-group-4">
@@ -92,17 +63,57 @@ export const Phone = () => {
               <div className="tagline-6">Brochure</div>
             </div>
           </div>
-          <button className="button-2">
+          <Modal
+            isVisible={activeModal === "effectuators"}
+            onClose={() => setActiveModal(null)} >
+            <h3>Entrepreneurs Effectuators</h3>
+            <p>
+            U-interviews with entrepreneurs-effectuators are in-depth interviews with individuals who embody a specific mindset and approach to entrepreneurship. Effectuation is a philosophy and method of thinking that stands in contrast to traditional business planning and forecasting.
+            Effectuators are characterized by their proactive and action-oriented mindset. Instead of relying on predictions and detailed plans, they believe in creating their future by taking practical steps and leveraging the resources available to them. This approach is rooted in the belief that the future is not predetermined but can be shaped through intentional action.
+            </p>
+          </Modal>
+          <Modal
+            isVisible={activeModal === "serial"}
+            onClose={() => setActiveModal(null)} >
+            <h3>Serial Entrepreneurs</h3>
+            <p>
+            U-interviews with serial entrepreneurs are in-depth interviews with individuals who repeatedly start and manage new businesses, often in diverse industries. Driven by innovation and a passion for creating ventures, they navigate challenges, learn from experiences, and leverage expertise to launch multiple enterprises over their career.
+            </p>
+          </Modal>
+          <Modal
+            isVisible={activeModal === "researchers"}
+            onClose={() => setActiveModal(null)} >
+            <h3>Entrepreneurship Researchers</h3>
+            <p>
+            An entrepreneurship researcher is a professional dedicated to studying various aspects of entrepreneurship. They investigate entrepreneurial behaviours, motivations, and the impact of innovation on business development. Through empirical studies and theoretical frameworks, entrepreneurship researchers contribute valuable insights to help understand, promote, and support entrepreneurial activities.
+            </p>
+          </Modal>
+          <Modal
+            isVisible={activeModal === "designers"}
+            onClose={() => setActiveModal(null)} >
+            <h3>Ecosystem Designers</h3>
+            <p>
+            An entrepreneurship ecosystem designer is a professional who creates and optimises environments and organisational structures that foster entrepreneurial activities. They strategically develop networks, resources, and supportive frameworks to cultivate innovation, collaboration, and sustainable growth. These individuals play a crucial role in shaping the conditions that enable new ventures to thrive within a specific ecosystem.
+            </p>
+          </Modal>
+          <button className="button" onClick={() => setActiveModal("effectuators")}>
+            <div className="div-wrapper">
+              <div className="frame-2">
+                <div className="as">Entrepreneurs Effectuators</div>
+              </div>
+            </div>
+          </button>
+          <button className="button-2" onClick={() => setActiveModal("serial")}>
             <div className="frame-2">
               <div className="as-2">Serial Entrepreneurs</div>
             </div>
           </button>
-          <button className="button-3">
+          <button className="button-3" onClick={() => setActiveModal("researchers")}>
             <div className="frame-2">
               <div className="as-3">Entrepreneurship Researchers</div>
             </div>
           </button>
-          <button className="button-4">
+          <button className="button-4" onClick={() => setActiveModal("designers")}>
             <div className="frame-2">
               <div className="as-4">Ecosystem Designers</div>
             </div>
