@@ -64,7 +64,7 @@ function CTA() {
     <form className="form" onSubmit={handleSubmit}>
       <div className="overlap-5 cta-wrapper">
         <p className="form-title">
-          Subscribe today and get your "Empathy in business communications" guidebook for free
+          Subscribe today and get your "Empathy in business communications" guidebook for&nbsp;free
         </p>
         <div className="input">
           <Input 

@@ -82,7 +82,7 @@
       color: #292929;
       font-size: 42px;
       text-align: center;
-      line-height: 170%;
+      line-height: 1.5em;
     }
     .cta-label {
       font-family: "Gilroy-Medium", Helvetica;
@@ -115,5 +115,6 @@
     padding: 26px 70px;
     margin: 45 auto 0;
     display: block;
+    z-index: 2;
   }
 }
