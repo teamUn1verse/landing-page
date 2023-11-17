@@ -938,7 +938,11 @@ html {
   top: 235px;
   width: 619px;
 }
-
+.cat-item-button{
+  background: #fff;
+  cursor: pointer;
+  
+}
 .desktop .cat-item {
   height: 68px;
   position: relative;
@@ -1162,14 +1166,6 @@ html {
   width: 122px;
 }
 
-.desktop .item-icon {
-  height: 137px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 137px;
-}
-
 .desktop .text-wrapper-14 {
   color: #292929;
   font-family: "Gilroy-Semibold", Helvetica;
@@ -1196,14 +1192,15 @@ html {
   width: 181px;
 }
 
-.desktop .item-icon-2 {
-  background-image: url(../../../static/img/mask-group-3.png);
-  background-size: 100% 100%;
+.desktop .icon-wrapper{
+  background-color: #F6C943;
+  border-radius: 100%;
   height: 137px;
+  width: 137px;
   left: 0;
   position: absolute;
   top: 0;
-  width: 137px;
+  padding: 25px;
 }
 
 .desktop .STEPS {

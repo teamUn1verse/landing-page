@@ -225,12 +225,12 @@ export const Desktop = () => {
           <div className="categories-list">
             <div className="cat-item">
               <div className="frame-wrapper">
-                <div
-                  className="as-wrapper"
-                  // onClick={() => setActiveModal("effectuators")}
+                <button
+                  className="as-wrapper cat-item-button"
+                  onClick={() => setActiveModal("effectuators")}
                 >
                   <div className="as">Entrepreneurs Effectuators</div>
-                </div>
+                </button>
 
                 <Modal
                   isVisible={activeModal === "effectuators"}
@@ -238,86 +238,60 @@ export const Desktop = () => {
                 >
                   <h3>Entrepreneurs Effectuators</h3>
                   <p>
-                    Delve into the world of Entrepreneurs Effectuators, where
-                    ideas evolve into tangible businesses. These are the
-                    pioneers who leverage uncertainty and turn constraints into
-                    innovative solutions. Their hands-on approach, adaptive
-                    thinking, and keen insight into market demands make them
-                    stand out. Discover their stories, strategies, and the
-                    unique effectuation principles that guide their
-                    entrepreneurial journey.
+                    U-interviews with entrepreneurs-effectuators are in-depth interviews with individuals who embody a specific mindset and approach to entrepreneurship. Effectuation is a philosophy and method of thinking that stands in contrast to traditional business planning and forecasting.
+                    Effectuators are characterized by their proactive and action-oriented mindset. Instead of relying on predictions and detailed plans, they believe in creating their future by taking practical steps and leveraging the resources available to them. This approach is rooted in the belief that the future is not predetermined but can be shaped through intentional action.
                   </p>
                 </Modal>
               </div>
             </div>
             <div className="cat-item-2">
-              <div
-                className="as-wrapper"
-                // onClick={() => setActiveModal("serial")}
+              <button
+                className="as-wrapper cat-item-button"
+                onClick={() => setActiveModal("serial")}
               >
                 <div className="as-2">Serial Entrepreneurs</div>
-              </div>
+              </button>
               <Modal
                 isVisible={activeModal === "serial"}
                 onClose={() => setActiveModal(null)}
               >
                 <h3>Serial Entrepreneurs</h3>
                 <p>
-                  Meet the relentless visionaries who've mastered the art of
-                  starting multiple successful ventures. Serial Entrepreneurs
-                  are not just about multiple businesses; they're about
-                  resilience, adaptability, and a relentless pursuit of
-                  innovation. Every failure is a stepping stone, every success a
-                  testament to their indomitable spirit. Dive into their
-                  multifaceted journeys and glean insights into building,
-                  scaling, and transitioning across various industries.
+                  U-interviews with serial entrepreneurs are in-depth interviews with individuals who repeatedly start and manage new businesses, often in diverse industries. Driven by innovation and a passion for creating ventures, they navigate challenges, learn from experiences, and leverage expertise to launch multiple enterprises over their career. 
                 </p>
               </Modal>
             </div>
             <div className="cat-item-3">
-              <div
-                className="as-wrapper"
-                // onClick={() => setActiveModal("researchers")}
+              <button
+                className="as-wrapper cat-item-button"
+                onClick={() => setActiveModal("researchers")}
               >
                 <div className="as-3">Entrepreneurship Researchers</div>
-              </div>
+              </button>
               <Modal
                 isVisible={activeModal === "researchers"}
                 onClose={() => setActiveModal(null)}
               >
                 <h3>Entrepreneurship Researchers</h3>
                 <p>
-                  Behind every thriving entrepreneurial ecosystem lies the
-                  meticulous work of Entrepreneurship Researchers. These are the
-                  individuals who dissect, analyze, and present the intricacies
-                  of entrepreneurial phenomena. Their rigorous studies provide
-                  budding entrepreneurs with frameworks, theories, and
-                  data-driven insights. Explore the latest findings, trends, and
-                  academic perspectives that are shaping the future of
-                  entrepreneurship.
+                  An entrepreneurship researcher is a professional dedicated to studying various aspects of entrepreneurship. They investigate entrepreneurial behaviours, motivations, and the impact of innovation on business development. Through empirical studies and theoretical frameworks, entrepreneurship researchers contribute valuable insights to help understand, promote, and support entrepreneurial activities.
                 </p>
               </Modal>
             </div>
             <div className="cat-item-4">
-              <div
-                className="as-wrapper"
-                // onClick={() => setActiveModal("designers")}
+              <button
+                className="as-wrapper cat-item-button"
+                onClick={() => setActiveModal("designers")}
               >
                 <div className="as-4">Ecosystem Designers</div>
-              </div>
+              </button>
               <Modal
                 isVisible={activeModal === "designers"}
                 onClose={() => setActiveModal(null)}
               >
                 <h3>Ecosystem Designers</h3>
                 <p>
-                  Crafting a conducive environment for startups and innovators
-                  is no small feat. Ecosystem Designers are the architects
-                  behind thriving entrepreneurial landscapes. They cultivate
-                  networks, foster collaborations, and design platforms that
-                  facilitate growth, innovation, and sustainability. Discover
-                  the strategies employed by these visionaries to create
-                  ecosystems where ideas flourish and businesses thrive.
+                  An entrepreneurship ecosystem designer is a professional who creates and optimises environments and organisational structures that foster entrepreneurial activities. They strategically develop networks, resources, and supportive frameworks to cultivate innovation, collaboration, and sustainable growth. These individuals play a crucial role in shaping the conditions that enable new ventures to thrive within a specific ecosystem.
                 </p>
               </Modal>
             </div>
@@ -344,30 +318,26 @@ export const Desktop = () => {
                 Educating with entrepreneurs interviews
               </div>
               <div className="text-wrapper-13">High-quality</div>
-              <img
-                className="item-icon"
-                alt="Item icon"
-                src="/img/item-icon-1.png"
-              />
+              <div className="icon-wrapper" style={{"padding":"5px"}}>
+                <img alt="icon" src="/img/icons/mental-well-being.svg" />
+              </div>
             </div>
             <div className="item">
               <p className="text-wrapper-12">
                 Creating a future by taking action
               </p>
               <div className="text-wrapper-14">Effectuation</div>
-              <img
-                className="item-icon"
-                alt="Item icon"
-                src="/img/item-icon.png"
-              />
+              <div className="icon-wrapper">
+                <img alt="icon" src="/img/icons/empathy.svg" />
+              </div>
             </div>
             <div className="item">
               <p className="text-wrapper-12">
                 Engaging learning for personal growth
               </p>
               <div className="text-wrapper-15">Hedonic motivation</div>
-              <div className="item-icon-2">
-                <img className="STEPS" alt="Steps" src="/img/steps-1.png" />
+              <div className="icon-wrapper">
+                <img alt="icon" src="/img/icons/action.svg" />
               </div>
             </div>
             <div className="item-2">
@@ -376,7 +346,7 @@ export const Desktop = () => {
                 entrepreneurs
               </p>
               <div className="text-wrapper-17">Research</div>
-              <div className="item-icon-2">
+              <div className="icon-wrapper">
                 <img className="SEARCH" alt="Search" src="/img/search-1.png" />
               </div>
             </div>
