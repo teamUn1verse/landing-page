@@ -80,7 +80,7 @@ export const Desktop = () => {
                     </div>
                     <p className="text-wrapper">
                       Focus on effectuators - entrepreneurs who believe that
-                      opportunities are made by yourself, not found
+                      opportunities are created by you, not found
                     </p>
                   </div>
                   <div className="group-3">
@@ -142,7 +142,7 @@ export const Desktop = () => {
               </div>
             </div>
             <p className="h">
-              are empathic in-depth interviews with&nbsp;&nbsp;entrepreneurs
+              are in-depth interviews with&nbsp;&nbsp;entrepreneurs
             </p>
           </div>
         </div>
@@ -314,40 +314,39 @@ export const Desktop = () => {
         <div className="values-section">
           <div className="values-list">
             <div className="item">
-              <div className="text-wrapper-12">
-                Educating with entrepreneurs interviews
+              <div className="icon-list-content">
+                <h3 className="icon-list-title">Eudaimonic vs Hedonic Well-Being </h3>
+                <p className="icon-list-text">Engaging learning for personal growth</p>
               </div>
-              <div className="text-wrapper-13">High-quality</div>
               <div className="icon-wrapper" style={{"padding":"5px"}}>
-                <img alt="icon" src="/img/icons/mental-well-being.svg" />
+                <img alt="icon" src="/img/icons/mental-well-being.svg" width="110px"/>
               </div>
             </div>
             <div className="item">
-              <p className="text-wrapper-12">
-                Creating a future by taking action
-              </p>
-              <div className="text-wrapper-14">Effectuation</div>
+              <div className="icon-list-content">
+                <h3 className="icon-list-title">Empathy vs Egocentrism</h3>
+                <p className="icon-list-text">Educating with entrepreneurs in-depth interviews</p>
+              </div>
               <div className="icon-wrapper">
-                <img alt="icon" src="/img/icons/empathy.svg" />
+                <img alt="icon" src="/img/icons/empathy.svg" width="83px"/>
               </div>
             </div>
             <div className="item">
-              <p className="text-wrapper-12">
-                Engaging learning for personal growth
-              </p>
-              <div className="text-wrapper-15">Hedonic motivation</div>
+              <div className="icon-list-content">
+                <h3 className="icon-list-title">Effectuation vs Causation</h3>
+                <p className="icon-list-text">Creating future by taking action</p>
+              </div>
               <div className="icon-wrapper">
-                <img alt="icon" src="/img/icons/action.svg" />
+                <img alt="icon" src="/img/icons/action.svg" width="83px"/>
               </div>
             </div>
-            <div className="item-2">
-              <p className="text-wrapper-16">
-                Sharing achievements between business researchers and
-                entrepreneurs
-              </p>
-              <div className="text-wrapper-17">Research</div>
+            <div className="item">
+              <div className="icon-list-content">
+                <h3 className="icon-list-title">Entrepreneurship Research vs No-theory Education</h3>
+                <p className="icon-list-text">Sharing achievements between researchers and entrepreneurs</p>
+              </div>
               <div className="icon-wrapper">
-                <img className="SEARCH" alt="Search" src="/img/search-1.png" />
+                <img alt="Search" src="/img/search-1.png" width="83px"/>
               </div>
             </div>
           </div>

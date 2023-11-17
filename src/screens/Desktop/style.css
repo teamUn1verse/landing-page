@@ -1138,58 +1138,10 @@ html {
   height: 137px;
   position: relative;
   width: 383px;
-}
-
-.desktop .text-wrapper-12 {
-  color: #3e3e3c;
-  font-family: "Gilroy-Medium", Helvetica;
-  font-size: 18px;
-
-  left: 164px;
-  letter-spacing: 0;
-  line-height: 29.9px;
-  position: absolute;
-  top: 70px;
-  width: 215px;
-}
-
-.desktop .text-wrapper-13 {
-  color: #292929;
-  font-family: "Gilroy-Semibold", Helvetica;
-  font-size: 20px;
-
-  left: 164px;
-  letter-spacing: 0;
-  line-height: 30.2px;
-  position: absolute;
-  top: 30px;
-  width: 122px;
-}
-
-.desktop .text-wrapper-14 {
-  color: #292929;
-  font-family: "Gilroy-Semibold", Helvetica;
-  font-size: 20px;
-
-  left: 164px;
-  letter-spacing: 0;
-  line-height: 30.2px;
-  position: absolute;
-  top: 30px;
-  width: 123px;
-}
-
-.desktop .text-wrapper-15 {
-  color: #292929;
-  font-family: "Gilroy-Semibold", Helvetica;
-  font-size: 20px;
-
-  left: 164px;
-  letter-spacing: 0;
-  line-height: 30.2px;
-  position: absolute;
-  top: 30px;
-  width: 181px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: row-reverse;
 }
 
 .desktop .icon-wrapper{
@@ -1197,62 +1149,37 @@ html {
   border-radius: 100%;
   height: 137px;
   width: 137px;
-  left: 0;
-  position: absolute;
-  top: 0;
+  flex-basis: 137px;
   padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.desktop .icon-list-content{
+  height: 137px;
+  overflow: visible;
+  flex-basis: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 30px 0 0 27px;
 }
 
-.desktop .STEPS {
-  height: 73px;
-  left: 29px;
-  object-fit: cover;
-  position: absolute;
-  top: 30px;
-  width: 73px;
-}
-
-.desktop .item-2 {
-  height: 160px;
-  margin-right: -4px;
-  position: relative;
-  width: 418px;
-}
-
-.desktop .text-wrapper-16 {
-  color: #3e3e3c;
-  font-family: "Gilroy-Medium", Helvetica;
-  font-size: 18px;
-
-  left: 164px;
-  letter-spacing: 0;
-  line-height: 29.9px;
-  position: absolute;
-  top: 70px;
-  width: 250px;
-}
-
-.desktop .text-wrapper-17 {
+.desktop .icon-list-title{
   color: #292929;
   font-family: "Gilroy-Semibold", Helvetica;
-  font-size: 20px;
-
-  left: 164px;
-  letter-spacing: 0;
-  line-height: 30.2px;
-  position: absolute;
-  top: 30px;
-  width: 110px;
+  font-size: 18px;
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+.desktop .icon-list-text{
+  color: #3e3e3c;
+  font-family: "Gilroy-Regular", Helvetica;
+  font-size: 17px;
+  line-height: 1.2em;
 }
 
-.desktop .SEARCH {
-  height: 83px;
-  left: 27px;
-  object-fit: cover;
-  position: absolute;
-  top: 25px;
-  width: 83px;
-}
 
 .desktop .button-get-started {
   left: 0;

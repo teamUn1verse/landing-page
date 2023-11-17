@@ -64,7 +64,7 @@ function CTA() {
     <form className="form" onSubmit={handleSubmit}>
       <div className="overlap-5 cta-wrapper">
         <p className="form-title">
-          Subscribe today and get your "Empathy in business communications" guidebook
+          Subscribe today and get your "Empathy in business communications" guidebook for free
         </p>
         <div className="input">
           <Input 
@@ -74,7 +74,7 @@ function CTA() {
             ref={emailRef}
           />
         </div>
-        <div className="label cta-label"> Select an option</div>
+        <div className="label cta-label"> I’m interested in U-interviews with</div>
         <div className="radio-group cta-categories">
           <div className="col">
             <label className="radio-input" >
