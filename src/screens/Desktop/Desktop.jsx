@@ -20,37 +20,6 @@ export const Desktop = () => {
     }
   },[])
   
-  const handleSubmit = () => {
-    alert("rock-n-roll here Janne");
-  };
-
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-  const testimonials = [
-    {
-      name: "Irene Buller",
-      position: "Senior Consultant, EY, Switzerland",
-      text: "...",
-      photo: "/img/testimonial-photo.png",
-    },
-    {
-      name: "Ja R",
-      position: "Senior Consultant, EY, Switzerland",
-      text: "...",
-      photo: "/img/testimonial-photo.png",
-    },
-    // ... add more testimonials
-  ];
-
-  const handleNext = () => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const handlePrev = () => {
-    setCurrentTestimonial(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
-    );
-  };
-
   const [activeModal, setActiveModal] = useState(null);
 
   return (
