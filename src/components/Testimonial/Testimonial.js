@@ -52,6 +52,39 @@ const Testimonials = () => {
     return () => clearTimeout(timer);
   };
 
+  //Touch events
+  var xDown = null;
+  var yDown = null;
+  function getTouches(evt) {
+    return evt.touches ||             // browser API
+          evt.originalEvent.touches; // jQuery
+  }
+  function handleTouchStart(evt) {
+      const firstTouch = getTouches(evt)[0];
+      xDown = firstTouch.clientX;
+      yDown = firstTouch.clientY;
+  };
+  function handleTouchMove(evt) {
+      if ( ! xDown || ! yDown ) {
+          return;
+      }
+      var xUp = evt.touches[0].clientX;
+      var yUp = evt.touches[0].clientY;
+      var xDiff = xDown - xUp;
+      var yDiff = yDown - yUp;
+      if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
+          if ( xDiff > 0 ) {
+              handleNext();
+          } else {
+              handlePrev();
+          }
+      // } else {if ( yDiff > 0 ) {/* down swipe */} else {/* up swipe */}
+      }
+      /* reset values */
+      xDown = null;
+      yDown = null;
+  };
+
   // Code for handling fadeIn effect:
   const [animatoin, setAnimatoin] = useState("");
 
@@ -69,7 +102,7 @@ const Testimonials = () => {
               <img className="vector-14" alt="Vector" src="/img/vector-20.png" />
             </div>
           </div>
-          <div className={`testimonial-contetnt ${animatoin}`} onTouchMove={handleNext}>
+          <div className={`testimonial-contetnt ${animatoin}`} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
             <picture className="testimonial-photo">
               <source type="image/webp" srcSet={testimonials[currentTestimonial].photo + ".webp"} />
               <img alt="Testimonial photo" src={testimonials[currentTestimonial].photo + ".png"} />
