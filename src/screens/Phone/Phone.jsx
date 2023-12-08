@@ -166,7 +166,7 @@ export const Phone = () => {
               </div>
             </div>
           </div>
-          <Button className="button-5" href="#subscribe">
+          <Button className="button-5" href="#subscribe-mobile">
             Get Started
           </Button>
         </div>
@@ -205,7 +205,7 @@ export const Phone = () => {
               <div className="tagline-12">View All Categories</div>
             </div>
           </button> */}
-          <Button className="button-6 " href="#subscribe">
+          <Button className="button-6 " href="#subscribe-mobile">
             Get Started
           </Button>
         </div>
@@ -272,7 +272,7 @@ export const Phone = () => {
             <div className="tagline-16">entrepreneurial mindsets</div>
             <p className="tagline-17">Empathy-based learning of how to spend your lifetime doing business you enjoy</p>
             <div className="tagline-18">of the world</div>
-            <Button className="button-7 " href="#subscribe">
+            <Button className="button-7 " href="#subscribe-mobile">
               Get Started
             </Button>
           </div>
